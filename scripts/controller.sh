@@ -4,6 +4,7 @@
 #   reachability + free-space guard -> pre-chunk (clean interrupted attempts)
 #   -> build + axiom audit in the sandbox (unprivileged 'builder')
 #   -> export evidence (root, no .olean) -> report -> STATE.md -> local git commit.
+# v3: QUEUE=<file> selects a shared queue; items done or running on the other machine are skipped.
 # v2: an unreachable laptop is waited for (not counted as a disk failure); a chunk is
 # marked done only when its report exists; interrupted attempts are retried cleanly.
 # Stop cleanly with state/STOP (both) or state/STOP-<machine>.
@@ -12,7 +13,8 @@ set -u
 M="$1"
 ROOT=/g/rh-verif; cd "$ROOT" || exit 1
 export MSYS_NO_PATHCONV=1
-Q=state/queue-$M.txt; DONE=state/done-$M.txt; touch "$DONE"
+Q=${QUEUE:-state/queue-$M.txt}; DONE=state/done-$M.txt; touch "$DONE"
+OTHER=$([ "$M" = main ] && echo laptop || echo main)
 K="-i $HOME/.ssh/id_ed25519_remote -o IdentitiesOnly=yes -o BatchMode=yes -o ConnectTimeout=15 -o ServerAliveInterval=30 -o ServerAliveCountMax=6"
 LAPTOP=matis@192.168.1.143
 MIN_FREE_GB=20   # keep >= 15 GB free on the host disk, plus one chunk of margin
@@ -72,6 +74,8 @@ while true; do
   while IFS=$'\t' read -r -u 3 ID DEPTH N OPEN EST; do
     [ -z "$ID" ] && continue
     grep -qx "$ID" "$DONE" && continue
+    grep -qx "$ID" "state/done-$OTHER.txt" 2>/dev/null && continue   # shared queue: done elsewhere
+    grep -q "^$OTHER: $ID " "state/running-$OTHER.txt" 2>/dev/null && continue   # running elsewhere
     [ -e state/STOP ] || [ -e "state/STOP-$M" ] && { log "STOP file present, exiting"; break 2; }
     [ -s "state/jobs-$M.txt" ] && JOBS=$(tr -dc 0-9 < "state/jobs-$M.txt")
     wait_reachable || break 2
@@ -119,7 +123,7 @@ while true; do
     log "done $ID: $(head -1 reports/$ID.md)"
   done 3< <(tail -n +2 "$Q")
   # queue exhausted for now: stop when nothing pending, else loop again for retries
-  pending=$(tail -n +2 "$Q" | cut -f1 | grep -vxF -f "$DONE" | wc -l)
+  pending=$(tail -n +2 "$Q" | cut -f1 | grep -vxF -f <(cat state/done-main.txt state/done-laptop.txt) | wc -l)
   [ "$pending" -eq 0 ] && { log "queue $Q complete"; break; }
   [ "$progressed" -eq 0 ] && { log "no progress in a full pass, $pending pending; exiting"; break; }
 done
