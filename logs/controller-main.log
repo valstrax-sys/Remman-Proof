@@ -1403,3 +1403,7 @@ P0375 VÉRIFIÉ (build + audit axiomes) built 64 peak 11248 elapsed 175.4
 [2026-11-21T21:00:22Z] [main] start P0377 depth=5 modules=64 est_new_builds=147 host_free=19GB jobs=11 try=1
 [2026-11-21T21:01:40Z] [main] PRE_CHUNK P0377 fresh BUILD_EXIT P0377 0 2026-11-21T21:01:24Z MEM_PEAK_MIB 7541 MAX_LEAN_PROCS 11 AUDIT_EXIT P0377 0 2026-11-21T21:01:34Z CHUNK_END P0377 build=0 audit=0 2026-11-21T21:01:35Z 
 P0377 VÉRIFIÉ (build + audit axiomes) built 64 peak 7541 elapsed 62.7
+[2026-11-21T21:01:41Z] [main] done P0377: # Chunk P0377 â€” VÃ‰RIFIÃ‰ (build + audit axiomes)
+[2026-11-21T21:01:41Z] [main] start P0378 depth=5 modules=64 est_new_builds=141 host_free=19GB jobs=11 try=1
+[2026-11-21T21:02:55Z] [main] PRE_CHUNK P0378 fresh BUILD_EXIT P0378 0 2026-11-21T21:02:40Z MEM_PEAK_MIB 8280 MAX_LEAN_PROCS 11 AUDIT_EXIT P0378 0 2026-11-21T21:02:51Z CHUNK_END P0378 build=0 audit=0 2026-11-21T21:02:52Z 
+P0378 VÉRIFIÉ (build + audit axiomes) built 64 peak 8280 elapsed 59.8
