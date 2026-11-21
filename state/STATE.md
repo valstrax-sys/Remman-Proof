@@ -1,16 +1,16 @@
 # STATE — vérification distribuée de l'archive Lean d'Alpöge
 
-Mis à jour : 2026-11-21 12:20 UTC
+Mis à jour : 2026-11-21 12:21 UTC
 
 ## Résumé
 
-- Chunks vérifiés (build exit 0 + audit axiomes OK) : **27** (1728 modules cibles, 0 imports reconstruits en plus)
+- Chunks vérifiés (build exit 0 + audit axiomes OK) : **28** (1792 modules cibles, 0 imports reconstruits en plus)
 - Chunks en échec / non concluants : **0** 
 - En cours : laptop: P0022 (depth 0) since 12:19:47 UTC
-- Débit principale : 2817 modules/heure (1152 modules en 0.41 h de build) ; file `state/queue-main.txt` : 18/228 faits ; prochains : P0034, P0035, P0037, P0039, P0041
+- Débit principale : 2859 modules/heure (1216 modules en 0.43 h de build) ; file `state/queue-main.txt` : 19/228 faits ; prochains : P0035, P0037, P0039, P0041, P0043
 - Débit portable : 1571 modules/heure (576 modules en 0.37 h de build) ; file `state/queue-laptop.txt` : 9/172 faits ; prochains : P0022, P0024, P0027, P0029, P0031
 - Disque : laptop : 125 Go libres sur le disque hôte (12:19:46 UTC)
-main : 107 Go libres sur le disque hôte (12:20:34 UTC)
+main : 107 Go libres sur le disque hôte (12:21:44 UTC)
 
 ## Bloquants / décisions utilisateur
 
@@ -49,6 +49,7 @@ main : 107 Go libres sur le disque hôte (12:20:34 UTC)
 | [P0028](../reports/P0028.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 65.0 | 2026-11-21T12:17:47 |
 | [P0030](../reports/P0030.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 59.2 | 2026-11-21T12:19:01 |
 | [P0032](../reports/P0032.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 60.3 | 2026-11-21T12:20:13 |
+| [P0034](../reports/P0034.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 58.8 | 2026-11-21T12:21:23 |
 
 ## Reprise
 

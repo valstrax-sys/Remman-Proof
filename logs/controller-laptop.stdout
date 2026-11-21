@@ -23,3 +23,8 @@
 [2026-11-21T12:15:04Z] [laptop] done P0015: # Chunk P0015 — VÉRIFIÉ (build + audit axiomes)
 [2026-11-21T12:15:05Z] [laptop] start P0018 depth=0 modules=64 est_new_builds=64 host_free=126GB jobs=10
 [2026-11-21T12:17:17Z] [laptop] BUILD_EXIT P0018 0 2026-11-21T12:16:55Z MEM_PEAK_MIB 6862 MAX_LEAN_PROCS 10 AUDIT_EXIT P0018 0 2026-11-21T12:17:11Z CHUNK_END P0018 build=0 audit=0 2026-11-21T12:17:11Z 
+[2026-11-21T12:17:21Z] [laptop] done P0018: # Chunk P0018 — VÉRIFIÉ (build + audit axiomes)
+[2026-11-21T12:17:22Z] [laptop] start P0020 depth=0 modules=64 est_new_builds=64 host_free=125GB jobs=10
+[2026-11-21T12:19:42Z] [laptop] BUILD_EXIT P0020 0 2026-11-21T12:19:20Z MEM_PEAK_MIB 7744 MAX_LEAN_PROCS 10 AUDIT_EXIT P0020 0 2026-11-21T12:19:36Z CHUNK_END P0020 build=0 audit=0 2026-11-21T12:19:36Z 
+[2026-11-21T12:19:46Z] [laptop] done P0020: # Chunk P0020 — VÉRIFIÉ (build + audit axiomes)
+[2026-11-21T12:19:47Z] [laptop] start P0022 depth=0 modules=64 est_new_builds=64 host_free=125GB jobs=10
