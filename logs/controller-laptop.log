@@ -5,3 +5,5 @@ P0002 VÉRIFIÉ (build + audit axiomes) built 64 peak 10612 elapsed 356.4
 [2026-11-21T11:59:12Z] [laptop] STOP file present, exiting
 [2026-11-21T11:59:12Z] [laptop] controller exit
 [2026-11-21T11:59:38Z] [laptop] start P0004 depth=0 modules=64 est_new_builds=64 host_free=128GB jobs=10
+[2026-11-21T12:03:40Z] [laptop] BUILD_EXIT P0004 0 2026-11-21T12:03:15Z MEM_PEAK_MIB 9125 MAX_LEAN_PROCS 10 AUDIT_EXIT P0004 0 2026-11-21T12:03:34Z CHUNK_END P0004 build=0 audit=0 2026-11-21T12:03:34Z 
+P0004 VÉRIFIÉ (build + audit axiomes) built 64 peak 9125 elapsed 205.5
