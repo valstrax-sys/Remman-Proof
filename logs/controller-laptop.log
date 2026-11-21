@@ -91,3 +91,5 @@ P0049 VÉRIFIÉ (build + audit axiomes) built 64 peak 6879 elapsed 93.3
 [2026-11-21T12:52:00Z] [laptop] start P0051 depth=0 modules=64 est_new_builds=64 host_free=120GB jobs=10
 [2026-11-21T12:54:12Z] [laptop] BUILD_EXIT P0051 0 2026-11-21T12:53:51Z MEM_PEAK_MIB 7270 MAX_LEAN_PROCS 10 AUDIT_EXIT P0051 0 2026-11-21T12:54:05Z CHUNK_END P0051 build=0 audit=0 2026-11-21T12:54:05Z 
 P0051 VÉRIFIÉ (build + audit axiomes) built 64 peak 7270 elapsed 108.2
+[2026-11-21T12:54:16Z] [laptop] done P0051: # Chunk P0051 â€” VÃ‰RIFIÃ‰ (build + audit axiomes)
+[2026-11-21T12:54:18Z] [laptop] start P0054 depth=0 modules=64 est_new_builds=64 host_free=120GB jobs=10
