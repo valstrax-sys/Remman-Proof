@@ -116,3 +116,5 @@ FileNotFoundError: [WinError 3] Le chemin d’accès spécifié est introuvable: 'exc
 [2026-11-21T13:04:31Z] [laptop] controller exit
 [2026-11-21T13:12:43Z] [laptop] UNREACHABLE: laptop does not answer on SSH, waiting (checks every 5 min)
 [2026-11-21T14:13:54Z] [laptop] UNREACHABLE: laptop does not answer on SSH, waiting (checks every 5 min)
+[2026-11-21T19:30:39Z] [laptop] UNREACHABLE for 6 h, giving up
+[2026-11-21T19:30:56Z] [laptop] UNREACHABLE: laptop does not answer on SSH, waiting (checks every 5 min)
