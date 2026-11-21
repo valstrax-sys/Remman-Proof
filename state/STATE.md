@@ -1,15 +1,15 @@
 # STATE — vérification distribuée de l'archive Lean d'Alpöge
 
-Mis à jour : 2026-11-21 12:46 UTC
+Mis à jour : 2026-11-21 12:47 UTC
 
 ## Résumé
 
-- Chunks vérifiés (build exit 0 + audit axiomes OK) : **58** (3712 modules cibles, 0 imports reconstruits en plus)
+- Chunks vérifiés (build exit 0 + audit axiomes OK) : **59** (3776 modules cibles, 0 imports reconstruits en plus)
 - Chunks en échec / non concluants : **0** 
-- En cours : laptop: P0045 (depth 0) since 12:45:45 UTC
+- En cours : main: P0071 (depth 0) since 12:46:56 UTC
 - Débit principale : 3223 modules/heure (2496 modules en 0.77 h de build) ; file `state/queue-main.txt` : 39/228 faits ; prochains : P0071, P0073, P0075, P0077, P0079
-- Débit portable : 1714 modules/heure (1216 modules en 0.71 h de build) ; file `state/queue-laptop.txt` : 19/172 faits ; prochains : P0045, P0047, P0049, P0051, P0054
-- Disque : laptop : 121 Go libres sur le disque hôte (12:45:43 UTC)
+- Débit portable : 1734 modules/heure (1280 modules en 0.74 h de build) ; file `state/queue-laptop.txt` : 20/172 faits ; prochains : P0047, P0049, P0051, P0054, P0056
+- Disque : laptop : 121 Go libres sur le disque hôte (12:47:58 UTC)
 main : 99 Go libres sur le disque hôte (12:46:55 UTC)
 
 ## Bloquants / décisions utilisateur
@@ -66,6 +66,7 @@ main : 99 Go libres sur le disque hôte (12:46:55 UTC)
 | [P0042](../reports/P0042.md) | portable | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 138.0 | 2026-11-21T12:45:08 |
 | [P0043](../reports/P0043.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 61.8 | 2026-11-21T12:27:44 |
 | [P0044](../reports/P0044.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 70.1 | 2026-11-21T12:29:07 |
+| [P0045](../reports/P0045.md) | portable | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 102.8 | 2026-11-21T12:47:23 |
 | [P0046](../reports/P0046.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 68.5 | 2026-11-21T12:30:30 |
 | [P0048](../reports/P0048.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 62.6 | 2026-11-21T12:31:46 |
 | [P0050](../reports/P0050.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 54.7 | 2026-11-21T12:32:52 |
