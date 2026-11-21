@@ -1,17 +1,17 @@
 # STATE — vérification distribuée de l'archive Lean d'Alpöge
 
-Mis à jour : 2026-11-21 14:22 UTC
+Mis à jour : 2026-11-21 14:23 UTC
 
 ## Résumé
 
-- Chunks vérifiés (build exit 0 + audit axiomes OK) : **119** (7591 modules cibles, 580 imports reconstruits en plus)
-- Chunks en échec / non concluants : **9** P0060 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0063 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0065 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0067 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0069 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0072 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0074 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0076 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0078 (BUILD OK MAIS CIBLES SANS LIGNE Built)
+- Chunks vérifiés (build exit 0 + audit axiomes OK) : **129** (8231 modules cibles, 580 imports reconstruits en plus)
+- Chunks en échec / non concluants : **0** 
 - En cours : rien
-- Débit principale : 3223 modules/heure (6507 modules en 2.02 h de build) ; file `state/queue-main.txt` : 102/228 faits ; prochains : P0166, P0168, P0170, P0172, P0174
+- Débit principale : 3302 modules/heure (7147 modules en 2.16 h de build) ; file `state/queue-main.txt` : 103/228 faits ; prochains : P0166, P0168, P0170, P0172, P0174
 - Débit portable : 1820 modules/heure (1664 modules en 0.91 h de build) ; file `state/queue-laptop.txt` : 26/172 faits ; prochains : P0060, P0063, P0065, P0067, P0069
-- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 10/282 faits ; prochains : P0081, P0083, P0085, P0087, P0090
+- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 11/282 faits ; prochains : P0083, P0085, P0087, P0090, P0092
 - Disque : laptop :  Go libres sur le disque hôte (13:04:09 UTC)
-main : 74 Go libres sur le disque hôte (14:22:23 UTC)
+main : 74 Go libres sur le disque hôte (14:23:56 UTC)
 
 ## Bloquants / décisions utilisateur
 
@@ -84,27 +84,28 @@ main : 74 Go libres sur le disque hôte (14:22:23 UTC)
 | [P0057](../reports/P0057.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 57.4 | 2026-11-21T12:37:29 |
 | [P0058](../reports/P0058.md) | portable | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 129.1 | 2026-11-21T13:00:47 |
 | [P0059](../reports/P0059.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 60.6 | 2026-11-21T12:38:41 |
-| [P0060](../reports/P0060.md) | principale | BUILD OK MAIS CIBLES SANS LIGNE Built | 64 | 0 | 41.7 | 2026-11-21T14:13:12 |
+| [P0060](../reports/P0060.md) | principale | VÉRIFIÉ (build + audit axiomes ; 27 cibles compilées par un chunk antérieur) | 64 | 0 | 41.7 | 2026-11-21T14:13:12 |
 | [P0061](../reports/P0061.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 60.8 | 2026-11-21T12:39:55 |
 | [P0062](../reports/P0062.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 62.9 | 2026-11-21T12:41:10 |
-| [P0063](../reports/P0063.md) | principale | BUILD OK MAIS CIBLES SANS LIGNE Built | 64 | 0 | 47.1 | 2026-11-21T14:14:14 |
+| [P0063](../reports/P0063.md) | principale | VÉRIFIÉ (build + audit axiomes ; 18 cibles compilées par un chunk antérieur) | 64 | 0 | 47.1 | 2026-11-21T14:14:14 |
 | [P0064](../reports/P0064.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 62.5 | 2026-11-21T12:42:26 |
-| [P0065](../reports/P0065.md) | principale | BUILD OK MAIS CIBLES SANS LIGNE Built | 64 | 0 | 65.5 | 2026-11-21T14:15:34 |
+| [P0065](../reports/P0065.md) | principale | VÉRIFIÉ (build + audit axiomes ; 4 cibles compilées par un chunk antérieur) | 64 | 0 | 65.5 | 2026-11-21T14:15:34 |
 | [P0066](../reports/P0066.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 66.4 | 2026-11-21T12:43:46 |
-| [P0067](../reports/P0067.md) | principale | BUILD OK MAIS CIBLES SANS LIGNE Built | 64 | 0 | 57.8 | 2026-11-21T14:16:49 |
+| [P0067](../reports/P0067.md) | principale | VÉRIFIÉ (build + audit axiomes ; 15 cibles compilées par un chunk antérieur) | 64 | 0 | 57.8 | 2026-11-21T14:16:49 |
 | [P0068](../reports/P0068.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 73.9 | 2026-11-21T12:45:13 |
-| [P0069](../reports/P0069.md) | principale | BUILD OK MAIS CIBLES SANS LIGNE Built | 64 | 0 | 57.7 | 2026-11-21T14:18:03 |
+| [P0069](../reports/P0069.md) | principale | VÉRIFIÉ (build + audit axiomes ; 10 cibles compilées par un chunk antérieur) | 64 | 0 | 57.7 | 2026-11-21T14:18:03 |
 | [P0070](../reports/P0070.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 62.9 | 2026-11-21T12:46:32 |
 | [P0071](../reports/P0071.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 68.7 | 2026-11-21T12:47:54 |
-| [P0072](../reports/P0072.md) | principale | BUILD OK MAIS CIBLES SANS LIGNE Built | 64 | 0 | 24.8 | 2026-11-21T14:18:44 |
+| [P0072](../reports/P0072.md) | principale | VÉRIFIÉ (build + audit axiomes ; 44 cibles compilées par un chunk antérieur) | 64 | 0 | 24.8 | 2026-11-21T14:18:44 |
 | [P0073](../reports/P0073.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 50.4 | 2026-11-21T12:49:00 |
-| [P0074](../reports/P0074.md) | principale | BUILD OK MAIS CIBLES SANS LIGNE Built | 64 | 0 | 44.3 | 2026-11-21T14:19:42 |
+| [P0074](../reports/P0074.md) | principale | VÉRIFIÉ (build + audit axiomes ; 20 cibles compilées par un chunk antérieur) | 64 | 0 | 44.3 | 2026-11-21T14:19:42 |
 | [P0075](../reports/P0075.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 95.2 | 2026-11-21T12:50:41 |
-| [P0076](../reports/P0076.md) | principale | BUILD OK MAIS CIBLES SANS LIGNE Built | 64 | 0 | 57.7 | 2026-11-21T14:20:51 |
+| [P0076](../reports/P0076.md) | principale | VÉRIFIÉ (build + audit axiomes ; 15 cibles compilées par un chunk antérieur) | 64 | 0 | 57.7 | 2026-11-21T14:20:51 |
 | [P0077](../reports/P0077.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 64.0 | 2026-11-21T12:51:57 |
-| [P0078](../reports/P0078.md) | principale | BUILD OK MAIS CIBLES SANS LIGNE Built | 64 | 0 | 52.3 | 2026-11-21T14:21:57 |
+| [P0078](../reports/P0078.md) | principale | VÉRIFIÉ (build + audit axiomes ; 16 cibles compilées par un chunk antérieur) | 64 | 0 | 52.3 | 2026-11-21T14:21:57 |
 | [P0079](../reports/P0079.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 59.0 | 2026-11-21T12:53:09 |
 | [P0080](../reports/P0080.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 132.7 | 2026-11-21T12:55:28 |
+| [P0081](../reports/P0081.md) | principale | VÉRIFIÉ (build + audit axiomes ; 15 cibles compilées par un chunk antérieur) | 64 | 0 | 75.6 | 2026-11-21T14:23:28 |
 | [P0082](../reports/P0082.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 54.1 | 2026-11-21T12:56:42 |
 | [P0084](../reports/P0084.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 55.4 | 2026-11-21T12:57:49 |
 | [P0086](../reports/P0086.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 70.8 | 2026-11-21T12:59:09 |

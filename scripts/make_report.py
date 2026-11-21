@@ -52,8 +52,21 @@ ec = receipt.get('exit_code')
 targets_mods = [c[1:].rsplit(':', 1)[0] for c in receipt.get('command', []) if c.startswith('+')]
 built_names = set(re.findall(r'\]\s+Built\s+([^\s:]+)', re.sub(r'\[[0-9;]*m', '', blogtxt)))
 missing_built = [t for t in targets_mods if t not in built_names]
+# Targets already compiled by an earlier chunk on the same machine: cite that run (state/built-index.tsv)
+mkey = 'laptop' if 'portable' in machine else 'main'
+idxp = os.path.join(root, 'state', 'built-index.tsv')
+index = {}
+if os.path.exists(idxp):
+    for line in open(idxp, encoding='utf-8'):
+        mod, ch, mk, lsha = line.rstrip('\n').split('\t')
+        if mk == mkey and mod not in index: index[mod] = (ch, lsha)
+earlier = {t: index[t] for t in missing_built if t in index and index[t][0] != cid}
+missing_built = [t for t in missing_built if t not in earlier]
+if not any(v[0] == cid for v in index.values()) and receipt.get('exit_code') == 0:
+    with open(idxp, 'a', encoding='utf-8', newline='\n') as f:
+        for mod in sorted(built_names): f.write(f'{mod}\t{cid}\t{mkey}\t{log_sha}\n')
 verified = (ec == 0 and log_sha == receipt.get('log_sha256') and audit_ok and not errors and not missing_built)
-status = 'VÉRIFIÉ (build + audit axiomes)' if verified else ('BUILD OK MAIS CIBLES SANS LIGNE Built' if (ec == 0 and missing_built) else 'ÉCHEC BUILD' if ec not in (0, None) else ('AUDIT NON CONCLUANT' if ec == 0 else 'INCOMPLET'))
+status = ('VÉRIFIÉ (build + audit axiomes)' if not earlier else f'VÉRIFIÉ (build + audit axiomes ; {len(earlier)} cibles compilées par un chunk antérieur)') if verified else ('BUILD OK MAIS CIBLES SANS LIGNE Built' if (ec == 0 and missing_built) else 'ÉCHEC BUILD' if ec not in (0, None) else ('AUDIT NON CONCLUANT' if ec == 0 else 'INCOMPLET'))
 tasks_ = receipt.get('tasks', [])
 rebuilt = receipt.get('rebuilt_project_modules', [])
 md = f"""# Chunk {cid} — {status}
@@ -93,6 +106,10 @@ if errors: anom.append('Erreurs de build :\n```\n' + '\n'.join(errors[:20]) + '\
 if flags: anom.append('Signalements audit :\n```\n' + '\n'.join(flags[:20]) + '\n```')
 if audit_err: anom.append('Erreurs de l\'audit :\n```\n' + '\n'.join(audit_err) + '\n```')
 if log_sha != receipt.get('log_sha256'): anom.append('Hash du log différent du receipt.')
+if earlier:
+    byc = {}
+    for t, (ch, lsha) in earlier.items(): byc.setdefault((ch, lsha), []).append(t)
+    anom.append(f'{len(earlier)} cible(s) déjà compilées (ligne `Built`, exit 0) par un chunk antérieur sur la même machine, comme prérequis : Lake ne les a pas recompilées ici (exit 0 = à jour). Références : ' + '; '.join(f'{len(v)} dans [{ch}]({ch}.md) (log sha256 `{lsha[:16]}…`)' for (ch, lsha), v in byc.items()) + '. L’audit des axiomes ci-dessus porte bien sur toutes les cibles.')
 if missing_built: anom.append(f'{len(missing_built)} cible(s) sans ligne `Built` dans ce run (déjà compilées auparavant) : ' + ', '.join(missing_built[:20]))
 if any(n.startswith('run-') and 'interrupted' in n for n in os.listdir(src)): anom.append('Une tentative précédente a été interrompue (infrastructure : perte SSH/veille) ; son log partiel est conservé dans logs/' + cid + '/ ; les sorties de build des cibles ont été supprimées avant la reprise pour tout recompiler.')
 md += ('\n\n'.join(anom) if anom else 'Aucune.') + '\n'
