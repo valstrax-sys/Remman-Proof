@@ -1,17 +1,17 @@
 # STATE — vérification distribuée de l'archive Lean d'Alpöge
 
-Mis à jour : 2026-11-21 20:54 UTC
+Mis à jour : 2026-11-21 20:56 UTC
 
 ## Résumé
 
-- Chunks vérifiés (build exit 0 + audit axiomes OK) : **373** (23773 modules cibles, 1136 imports reconstruits en plus)
+- Chunks vérifiés (build exit 0 + audit axiomes OK) : **374** (23837 modules cibles, 1138 imports reconstruits en plus)
 - Chunks en échec / non concluants : **0** 
 - En cours : laptop: P0362 (depth 5, try 1) since 20:42:30 UTC
-- Débit principale : 3043 modules/heure (23245 modules en 7.64 h de build) ; file `state/queue-main.txt` : 347/228 faits ; prochains : P0375, P0376, P0378, P0379, P0381
+- Débit principale : 3041 modules/heure (23311 modules en 7.67 h de build) ; file `state/queue-main.txt` : 348/228 faits ; prochains : P0375, P0376, P0378, P0379, P0381
 - Débit portable : 1820 modules/heure (1664 modules en 0.91 h de build) ; file `state/queue-laptop.txt` : 26/172 faits ; prochains : P0060, P0063, P0065, P0067, P0069
-- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 255/282 faits ; prochains : P0374, P0375, P0376, P0377, P0378
+- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 256/282 faits ; prochains : P0375, P0376, P0377, P0378, P0379
 - Disque : laptop :  Go libres sur le disque hôte (13:04:09 UTC)
-main : 19 Go libres sur le disque hôte (20:54:45 UTC)
+main : 19 Go libres sur le disque hôte (20:56:44 UTC)
 
 ## Bloquants / décisions utilisateur
 
@@ -413,6 +413,7 @@ h-verif; git push -u origin main`.
 | [P0371](../reports/P0371.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 1 | 61.5 | 2026-11-21T20:51:19 |
 | [P0372](../reports/P0372.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 70.3 | 2026-11-21T20:52:44 |
 | [P0373](../reports/P0373.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 74.2 | 2026-11-21T20:54:16 |
+| [P0374](../reports/P0374.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 2 | 97.9 | 2026-11-21T20:56:13 |
 
 ## Reprise
 
