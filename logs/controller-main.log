@@ -101,3 +101,5 @@ P0044 VÉRIFIÉ (build + audit axiomes) built 64 peak 7406 elapsed 70.1
 P0046 VÉRIFIÉ (build + audit axiomes) built 64 peak 7701 elapsed 68.5
 [2026-11-21T12:30:53Z] [main] done P0046: # Chunk P0046 â€” VÃ‰RIFIÃ‰ (build + audit axiomes)
 [2026-11-21T12:30:54Z] [main] start P0048 depth=0 modules=64 est_new_builds=64 host_free=104GB jobs=11
+[2026-11-21T12:32:06Z] [main] BUILD_EXIT P0048 0 2026-11-21T12:31:50Z MEM_PEAK_MIB 8338 MAX_LEAN_PROCS 11 AUDIT_EXIT P0048 0 2026-11-21T12:32:00Z CHUNK_END P0048 build=0 audit=0 2026-11-21T12:32:00Z 
+P0048 VÉRIFIÉ (build + audit axiomes) built 64 peak 8338 elapsed 62.6
