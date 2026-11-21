@@ -49,8 +49,11 @@ mem = [l.split() for l in rd(f'{cid}.mem').splitlines() if len(l.split()) >= 2]
 mempeak = max((int(x[1]) for x in mem), default=0)
 maxprocs = max((int(x[2]) for x in mem if len(x) > 2), default='?')
 ec = receipt.get('exit_code')
-verified = (ec == 0 and log_sha == receipt.get('log_sha256') and audit_ok and not errors)
-status = 'VÉRIFIÉ (build + audit axiomes)' if verified else ('ÉCHEC BUILD' if ec not in (0, None) else ('AUDIT NON CONCLUANT' if ec == 0 else 'INCOMPLET'))
+targets_mods = [c[1:].rsplit(':', 1)[0] for c in receipt.get('command', []) if c.startswith('+')]
+built_names = set(re.findall(r'\]\s+Built\s+([^\s:]+)', re.sub(r'\[[0-9;]*m', '', blogtxt)))
+missing_built = [t for t in targets_mods if t not in built_names]
+verified = (ec == 0 and log_sha == receipt.get('log_sha256') and audit_ok and not errors and not missing_built)
+status = 'VÉRIFIÉ (build + audit axiomes)' if verified else ('BUILD OK MAIS CIBLES SANS LIGNE Built' if (ec == 0 and missing_built) else 'ÉCHEC BUILD' if ec not in (0, None) else ('AUDIT NON CONCLUANT' if ec == 0 else 'INCOMPLET'))
 tasks_ = receipt.get('tasks', [])
 rebuilt = receipt.get('rebuilt_project_modules', [])
 md = f"""# Chunk {cid} — {status}
@@ -90,6 +93,8 @@ if errors: anom.append('Erreurs de build :\n```\n' + '\n'.join(errors[:20]) + '\
 if flags: anom.append('Signalements audit :\n```\n' + '\n'.join(flags[:20]) + '\n```')
 if audit_err: anom.append('Erreurs de l\'audit :\n```\n' + '\n'.join(audit_err) + '\n```')
 if log_sha != receipt.get('log_sha256'): anom.append('Hash du log différent du receipt.')
+if missing_built: anom.append(f'{len(missing_built)} cible(s) sans ligne `Built` dans ce run (déjà compilées auparavant) : ' + ', '.join(missing_built[:20]))
+if any(n.startswith('run-') and 'interrupted' in n for n in os.listdir(src)): anom.append('Une tentative précédente a été interrompue (infrastructure : perte SSH/veille) ; son log partiel est conservé dans logs/' + cid + '/ ; les sorties de build des cibles ont été supprimées avant la reprise pour tout recompiler.')
 md += ('\n\n'.join(anom) if anom else 'Aucune.') + '\n'
 md += f"""
 ## Fichiers
