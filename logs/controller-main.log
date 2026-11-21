@@ -1239,3 +1239,7 @@ P0334 VÉRIFIÉ (build + audit axiomes) built 65 peak 7959 elapsed 78.5
 [2026-11-21T19:53:20Z] [main] start P0335 depth=4 modules=64 est_new_builds=70 host_free=19GB jobs=11 try=1
 [2026-11-21T19:54:51Z] [main] PRE_CHUNK P0335 fresh BUILD_EXIT P0335 0 2026-11-21T19:54:37Z MEM_PEAK_MIB 7864 MAX_LEAN_PROCS 11 AUDIT_EXIT P0335 0 2026-11-21T19:54:47Z CHUNK_END P0335 build=0 audit=0 2026-11-21T19:54:47Z 
 P0335 VÉRIFIÉ (build + audit axiomes) built 65 peak 7864 elapsed 79.6
+[2026-11-21T19:54:53Z] [main] done P0335: # Chunk P0335 â€” VÃ‰RIFIÃ‰ (build + audit axiomes)
+[2026-11-21T19:54:53Z] [main] start P0336 depth=4 modules=64 est_new_builds=82 host_free=19GB jobs=11 try=1
+[2026-11-21T19:55:55Z] [main] PRE_CHUNK P0336 fresh BUILD_EXIT P0336 0 2026-11-21T19:55:40Z MEM_PEAK_MIB 7690 MAX_LEAN_PROCS 11 AUDIT_EXIT P0336 0 2026-11-21T19:55:50Z CHUNK_END P0336 build=0 audit=0 2026-11-21T19:55:51Z 
+P0336 VÉRIFIÉ (build + audit axiomes) built 64 peak 7690 elapsed 53.5
