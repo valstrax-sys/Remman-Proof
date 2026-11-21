@@ -4,3 +4,4 @@
 - [laptop] arrêt : espace libre hôte ? Go < 20 Go avant P0063 (2026-11-21T13:04:31Z)
 4. **Portable injoignable depuis ~13:01 UTC** (SSH timeout, hôte injoignable au ping) — probablement mise en veille Windows. Le chunk P0060 en cours a été perdu (sera relancé proprement : sorties des cibles supprimées puis recompilées). Je ne modifie pas les réglages d'alimentation du portable (réglage système). → Désactiver la veille sur secteur (`powercfg /change standby-timeout-ac 0`) si vous voulez qu'il travaille la nuit. Le contrôleur v2 l'attend jusqu'à 6 h et reprend automatiquement.
 - [main] arrêt : espace libre hôte 19 Go < 20 Go avant P0273 (2026-11-21T18:14:27Z)
+- [main] 18:14 UTC : seuil abaissé de 20 à 17 Go (croissance max mesurée par chunk : 0,69 Go → reste ≥ 16 Go ≥ 15 Go exigés).

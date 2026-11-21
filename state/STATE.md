@@ -1,17 +1,17 @@
 # STATE — vérification distribuée de l'archive Lean d'Alpöge
 
-Mis à jour : 2026-11-21 18:14 UTC
+Mis à jour : 2026-11-21 18:17 UTC
 
 ## Résumé
 
-- Chunks vérifiés (build exit 0 + audit axiomes OK) : **272** (17348 modules cibles, 1075 imports reconstruits en plus)
+- Chunks vérifiés (build exit 0 + audit axiomes OK) : **273** (17412 modules cibles, 1075 imports reconstruits en plus)
 - Chunks en échec / non concluants : **0** 
 - En cours : rien
-- Débit principale : 3070 modules/heure (16759 modules en 5.46 h de build) ; file `state/queue-main.txt` : 246/228 faits ; prochains : P0274, P0275, P0277, P0279, P0280
+- Débit principale : 3060 modules/heure (16823 modules en 5.50 h de build) ; file `state/queue-main.txt` : 247/228 faits ; prochains : P0274, P0275, P0277, P0279, P0280
 - Débit portable : 1820 modules/heure (1664 modules en 0.91 h de build) ; file `state/queue-laptop.txt` : 26/172 faits ; prochains : P0060, P0063, P0065, P0067, P0069
-- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 154/282 faits ; prochains : P0273, P0274, P0275, P0276, P0277
+- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 155/282 faits ; prochains : P0274, P0275, P0276, P0277, P0278
 - Disque : laptop :  Go libres sur le disque hôte (13:04:09 UTC)
-main : 19 Go libres sur le disque hôte (18:14:26 UTC)
+main : 19 Go libres sur le disque hôte (18:17:35 UTC)
 
 ## Bloquants / décisions utilisateur
 
@@ -21,6 +21,7 @@ main : 19 Go libres sur le disque hôte (18:14:26 UTC)
 - [laptop] arrêt : espace libre hôte ? Go < 20 Go avant P0063 (2026-11-21T13:04:31Z)
 4. **Portable injoignable depuis ~13:01 UTC** (SSH timeout, hôte injoignable au ping) — probablement mise en veille Windows. Le chunk P0060 en cours a été perdu (sera relancé proprement : sorties des cibles supprimées puis recompilées). Je ne modifie pas les réglages d'alimentation du portable (réglage système). → Désactiver la veille sur secteur (`powercfg /change standby-timeout-ac 0`) si vous voulez qu'il travaille la nuit. Le contrôleur v2 l'attend jusqu'à 6 h et reprend automatiquement.
 - [main] arrêt : espace libre hôte 19 Go < 20 Go avant P0273 (2026-11-21T18:14:27Z)
+- [main] 18:14 UTC : seuil abaissé de 20 à 17 Go (croissance max mesurée par chunk : 0,69 Go → reste ≥ 16 Go ≥ 15 Go exigés).
 
 ## Chunks
 
@@ -298,6 +299,7 @@ main : 19 Go libres sur le disque hôte (18:14:26 UTC)
 | [P0270](../reports/P0270.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 83.2 | 2026-11-21T18:10:02 |
 | [P0271](../reports/P0271.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 104.9 | 2026-11-21T18:12:02 |
 | [P0272](../reports/P0272.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 2 | 96.3 | 2026-11-21T18:13:59 |
+| [P0273](../reports/P0273.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 138.0 | 2026-11-21T18:17:01 |
 
 ## Reprise
 

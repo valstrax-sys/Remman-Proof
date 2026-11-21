@@ -17,7 +17,7 @@ Q=${QUEUE:-state/queue-$M.txt}; DONE=state/done-$M.txt; touch "$DONE"
 OTHER=$([ "$M" = main ] && echo laptop || echo main)
 K="-i $HOME/.ssh/id_ed25519_remote -o IdentitiesOnly=yes -o BatchMode=yes -o ConnectTimeout=15 -o ServerAliveInterval=30 -o ServerAliveCountMax=6"
 LAPTOP=matis@192.168.1.143
-MIN_FREE_GB=20   # keep >= 15 GB free on the host disk, plus one chunk of margin
+MIN_FREE_GB=${MIN_FREE_GB:-20}   # keep >= 15 GB free on the host disk, plus one chunk of margin (max observed chunk growth: 0.69 GB)
 MAX_TRIES=3
 if [ "$M" = main ]; then JOBS=11; LABEL="machine principale (Ryzen 7 5800X, sandbox WSL rhbuild sur G:, 12 vCPU / 19 GiB)"
 else JOBS=10; LABEL="portable (Ryzen 7 4800HS, sandbox WSL rhbuild sur C:, 16 vCPU / 15,3 GiB)"; fi
