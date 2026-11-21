@@ -4,14 +4,14 @@ Mis à jour : 2026-11-21 19:02 UTC
 
 ## Résumé
 
-- Chunks vérifiés (build exit 0 + audit axiomes OK) : **300** (19138 modules cibles, 1079 imports reconstruits en plus)
+- Chunks vérifiés (build exit 0 + audit axiomes OK) : **301** (19202 modules cibles, 1079 imports reconstruits en plus)
 - Chunks en échec / non concluants : **0** 
-- En cours : main: P0301 (depth 4, try 1) since 19:01:38 UTC
-- Débit principale : 3043 modules/heure (18553 modules en 6.10 h de build) ; file `state/queue-main.txt` : 274/228 faits ; prochains : P0301, P0303, P0304, P0306, P0308
+- En cours : rien
+- Débit principale : 3045 modules/heure (18617 modules en 6.11 h de build) ; file `state/queue-main.txt` : 275/228 faits ; prochains : P0303, P0304, P0306, P0308, P0310
 - Débit portable : 1820 modules/heure (1664 modules en 0.91 h de build) ; file `state/queue-laptop.txt` : 26/172 faits ; prochains : P0060, P0063, P0065, P0067, P0069
-- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 182/282 faits ; prochains : P0301, P0302, P0303, P0304, P0305
+- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 183/282 faits ; prochains : P0302, P0303, P0304, P0305, P0306
 - Disque : laptop :  Go libres sur le disque hôte (13:04:09 UTC)
-main : 19 Go libres sur le disque hôte (19:01:37 UTC)
+main : 19 Go libres sur le disque hôte (19:02:54 UTC)
 
 ## Bloquants / décisions utilisateur
 
@@ -335,6 +335,7 @@ main : 19 Go libres sur le disque hôte (19:01:37 UTC)
 | [P0298](../reports/P0298.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 58.6 | 2026-11-21T18:58:39 |
 | [P0299](../reports/P0299.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 60.8 | 2026-11-21T18:59:57 |
 | [P0300](../reports/P0300.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 63.9 | 2026-11-21T19:01:14 |
+| [P0301](../reports/P0301.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 62.4 | 2026-11-21T19:02:33 |
 
 ## Reprise
 
