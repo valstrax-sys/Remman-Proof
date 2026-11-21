@@ -36,6 +36,11 @@ md.append(f'- En cours : {running or "rien"}')
 for m, lab in (('principale', 'main'), ('portable', 'laptop')):
     mods, secs, rt = rate(m); n, d, nxt = qinfo(lab)
     md.append(f'- Débit {m} : {rt:.0f} modules/heure ({mods} modules en {secs/3600:.2f} h de build) ; file `state/queue-{lab}.txt` : {d}/{n} faits ; prochains : {", ".join(nxt)}')
+sq = [l.split('	')[0] for l in readf(os.path.join(root, 'state', 'queue-shared.txt')).splitlines()[1:] if l]
+if sq:
+    alld = set(readf(os.path.join(root, 'state', 'done-main.txt')).split()) | set(readf(os.path.join(root, 'state', 'done-laptop.txt')).split())
+    rest = [x for x in sq if x not in alld]
+    md.append(f'- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : {len(sq)-len(rest)}/{len(sq)} faits ; prochains : {", ".join(rest[:5])}')
 md.append(f'- Disque : {disk or "?"}')
 md.append('\n## Bloquants / décisions utilisateur\n')
 md.append(blockers or 'Aucun.')
@@ -45,9 +50,10 @@ md.append('|---|---|---|---:|---:|---:|---|')
 for x in rows:
     md.append(f'| [{x[0]}](../reports/{x[0]}.md) | {x[1]} | {x[2]} | {x[3]} | {x[5]} | {x[4]} | {x[6]} |')
 md.append('\n## Reprise\n')
-md.append('Relancer le contrôleur : `bash scripts/controller.sh main` (Git Bash, depuis `G:\rh-verif`) et `bash scripts/controller.sh laptop`. '
-          'Chaque contrôleur reprend la file `state/queue-<machine>.txt` en sautant ce qui est dans `state/done-<machine>.txt`. '
-          'Un chunk interrompu laisse `/work/receipts/<ID>` dans la sandbox : le supprimer (en tant que builder) avant de relancer. '
-          'Créer `state/STOP` pour arrêter proprement après le chunk courant.')
+md.append('Relancer les contrôleurs (Git Bash, depuis `G:\\rh-verif`) : `QUEUE=state/queue-shared.txt bash scripts/controller.sh main` et '
+          '`QUEUE=state/queue-shared.txt bash scripts/controller.sh laptop`. File partagée : chaque machine saute ce qui figure dans '
+          '`state/done-main.txt` / `state/done-laptop.txt` ou est en cours sur l\'autre (`state/running-*.txt`). '
+          'Un chunk interrompu est repris proprement (`pre-chunk.sh` : ancienne tentative déplacée dans `/work/receipts/aborted/`, sorties des cibles supprimées puis recompilées). '
+          'Créer `state/STOP` (ou `state/STOP-<machine>`) pour arrêter proprement après le chunk courant ; `state/jobs-<machine>.txt` règle le parallélisme.')
 open(os.path.join(root, 'state', 'STATE.md'), 'w', encoding='utf-8', newline='\n').write('\n'.join(md) + '\n')
 print('STATE.md updated', len(ok), len(bad))

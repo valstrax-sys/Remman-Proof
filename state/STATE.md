@@ -1,16 +1,17 @@
 # STATE — vérification distribuée de l'archive Lean d'Alpöge
 
-Mis à jour : 2026-11-21 14:12 UTC
+Mis à jour : 2026-11-21 14:13 UTC
 
 ## Résumé
 
 - Chunks vérifiés (build exit 0 + audit axiomes OK) : **119** (7591 modules cibles, 580 imports reconstruits en plus)
-- Chunks en échec / non concluants : **0** 
+- Chunks en échec / non concluants : **1** P0060 (BUILD OK MAIS CIBLES SANS LIGNE Built)
 - En cours : rien
-- Débit principale : 3223 modules/heure (6507 modules en 2.02 h de build) ; file `state/queue-main.txt` : 93/228 faits ; prochains : P0166, P0168, P0170, P0172, P0174
+- Débit principale : 3223 modules/heure (6507 modules en 2.02 h de build) ; file `state/queue-main.txt` : 94/228 faits ; prochains : P0166, P0168, P0170, P0172, P0174
 - Débit portable : 1820 modules/heure (1664 modules en 0.91 h de build) ; file `state/queue-laptop.txt` : 26/172 faits ; prochains : P0060, P0063, P0065, P0067, P0069
+- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 2/282 faits ; prochains : P0063, P0065, P0067, P0069, P0072
 - Disque : laptop :  Go libres sur le disque hôte (13:04:09 UTC)
-main : 77 Go libres sur le disque hôte (14:12:31 UTC)
+main : 76 Go libres sur le disque hôte (14:13:35 UTC)
 
 ## Bloquants / décisions utilisateur
 
@@ -83,6 +84,7 @@ main : 77 Go libres sur le disque hôte (14:12:31 UTC)
 | [P0057](../reports/P0057.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 57.4 | 2026-11-21T12:37:29 |
 | [P0058](../reports/P0058.md) | portable | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 129.1 | 2026-11-21T13:00:47 |
 | [P0059](../reports/P0059.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 60.6 | 2026-11-21T12:38:41 |
+| [P0060](../reports/P0060.md) | principale | BUILD OK MAIS CIBLES SANS LIGNE Built | 64 | 0 | 41.7 | 2026-11-21T14:13:12 |
 | [P0061](../reports/P0061.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 60.8 | 2026-11-21T12:39:55 |
 | [P0062](../reports/P0062.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 62.9 | 2026-11-21T12:41:10 |
 | [P0064](../reports/P0064.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 62.5 | 2026-11-21T12:42:26 |
@@ -146,4 +148,4 @@ main : 77 Go libres sur le disque hôte (14:12:31 UTC)
 
 ## Reprise
 
-Relancer le contrôleur : `bash scripts/controller.sh main` (Git Bash, depuis `G:h-verif`) et `bash scripts/controller.sh laptop`. Chaque contrôleur reprend la file `state/queue-<machine>.txt` en sautant ce qui est dans `state/done-<machine>.txt`. Un chunk interrompu laisse `/work/receipts/<ID>` dans la sandbox : le supprimer (en tant que builder) avant de relancer. Créer `state/STOP` pour arrêter proprement après le chunk courant.
+Relancer les contrôleurs (Git Bash, depuis `G:\rh-verif`) : `QUEUE=state/queue-shared.txt bash scripts/controller.sh main` et `QUEUE=state/queue-shared.txt bash scripts/controller.sh laptop`. File partagée : chaque machine saute ce qui figure dans `state/done-main.txt` / `state/done-laptop.txt` ou est en cours sur l'autre (`state/running-*.txt`). Un chunk interrompu est repris proprement (`pre-chunk.sh` : ancienne tentative déplacée dans `/work/receipts/aborted/`, sorties des cibles supprimées puis recompilées). Créer `state/STOP` (ou `state/STOP-<machine>`) pour arrêter proprement après le chunk courant ; `state/jobs-<machine>.txt` règle le parallélisme.

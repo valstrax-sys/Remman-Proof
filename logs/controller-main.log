@@ -369,3 +369,9 @@ P0162 VÉRIFIÉ (build + audit axiomes) built 86 peak 7909 elapsed 73.9
 [2026-11-21T14:11:00Z] [main] start P0164 depth=1 modules=64 est_new_builds=75 host_free=77GB jobs=11 try=1
 [2026-11-21T14:12:30Z] [main] PRE_CHUNK P0164 fresh BUILD_EXIT P0164 0 2026-11-21T14:12:14Z MEM_PEAK_MIB 7082 MAX_LEAN_PROCS 11 AUDIT_EXIT P0164 0 2026-11-21T14:12:25Z CHUNK_END P0164 build=0 audit=0 2026-11-21T14:12:25Z 
 P0164 VÉRIFIÉ (build + audit axiomes) built 75 peak 7082 elapsed 79.6
+[2026-11-21T14:12:32Z] [main] done P0164: # Chunk P0164 â€” VÃ‰RIFIÃ‰ (build + audit axiomes)
+[2026-11-21T14:12:32Z] [main] STOP file present, exiting
+[2026-11-21T14:12:32Z] [main] controller exit
+[2026-11-21T14:12:39Z] [main] start P0060 depth=0 modules=64 est_new_builds=64 host_free=77GB jobs=11 try=1
+[2026-11-21T14:13:34Z] [main] PRE_CHUNK P0060 fresh BUILD_EXIT P0060 0 2026-11-21T14:13:17Z MEM_PEAK_MIB 6831 MAX_LEAN_PROCS 11 AUDIT_EXIT P0060 0 2026-11-21T14:13:28Z CHUNK_END P0060 build=0 audit=0 2026-11-21T14:13:28Z 
+P0060 BUILD OK MAIS CIBLES SANS LIGNE Built built 37 peak 6831 elapsed 41.7
