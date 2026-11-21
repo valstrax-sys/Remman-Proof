@@ -7,6 +7,7 @@ Mis à jour : 2026-11-21 20:46 UTC
 - Chunks vérifiés (build exit 0 + audit axiomes OK) : **368** (23453 modules cibles, 1135 imports reconstruits en plus)
 - Chunks en échec / non concluants : **0** 
 - En cours : laptop: P0362 (depth 5, try 1) since 20:42:30 UTC
+main: P0369 (depth 5, try 1) since 20:46:39 UTC
 - Débit principale : 3045 modules/heure (22924 modules en 7.53 h de build) ; file `state/queue-main.txt` : 342/228 faits ; prochains : P0369, P0371, P0373, P0375, P0376
 - Débit portable : 1820 modules/heure (1664 modules en 0.91 h de build) ; file `state/queue-laptop.txt` : 26/172 faits ; prochains : P0060, P0063, P0065, P0067, P0069
 - File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 250/282 faits ; prochains : P0369, P0370, P0371, P0372, P0373
@@ -34,6 +35,7 @@ main : 19 Go libres sur le disque hôte (20:45:41 UTC)
 - 20:40 UTC : la clé SSH Windows s'authentifie bien comme `Hesia-Unit` et peut lire le dépôt, mais `git push` est refusé (« Permission to valstrax-sys/Remman-Proof.git denied to Hesia-Unit »). Il faut que `valstrax-sys` invite `Hesia-Unit` en collaborateur avec droit d'écriture (Settings → Collaborators) **et** que `Hesia-Unit` accepte l'invitation (https://github.com/valstrax-sys/Remman-Proof/invitations). Ensuite : `cd G:
 h-verif; git push -u origin main`.
 - 20:38 UTC : portable de nouveau joignable ; le contrôleur v3 reprend la file partagée.
+- 21:00 UTC : **push résolu** — la deploy key `ark2` (= `/root/.ssh/id_ed25519` de Kali) est maintenant en lecture/écriture ; `main` poussé sur `valstrax-sys/Remman-Proof`. `scripts/pusher.sh` pousse les nouveaux commits toutes les 10 min (journal : `logs/pusher.log`).
 
 ## Chunks
 

@@ -50,6 +50,7 @@ La distro `rhbuild` est configurée par `scripts/setup-rhbuild-root.sh` :
   - root monte uniquement `G:\rh-verif\exchange` sur `/exchange` (`uid=0,umask=022`), donc en **lecture seule** pour `builder`. Vérifié : `touch` refusé ;
   - root copie les preuves vers `/exchange/out`. `builder` ne peut rien écrire hors de son ext4 ;
 - **les `git push` ne sont faits que par l'utilisateur principal**, côté Windows ou Kali. La sandbox ne contient aucune clé ni aucun token.
+  Le push se fait depuis Kali (utilisateur principal) avec la deploy key `ark2` en lecture/écriture, via `scripts/kali-push.sh`, appelé toutes les 10 min par `scripts/pusher.sh`.
 
 Limite connue : la sandbox a accès au réseau, ce qui est nécessaire pour télécharger l'archive et le cache Mathlib. Comme toutes les distros WSL2, elle partage le noyau de la VM.
 
