@@ -3,7 +3,8 @@
 # For each packet in state/queue-<machine>.txt not yet in state/done-<machine>.txt:
 #   free-space guard -> build + axiom audit in the sandbox (unprivileged 'builder')
 #   -> export evidence (root, no .olean) -> report -> STATE.md -> local git commit.
-# Stop cleanly by creating state/STOP.
+# Stop cleanly by creating state/STOP (both) or state/STOP-<machine>.
+# Parallelism per machine can be changed between chunks in state/jobs-<machine>.txt.
 set -u
 M="$1"
 ROOT=/g/rh-verif; cd "$ROOT" || exit 1
@@ -50,7 +51,8 @@ fi
 while IFS=$'\t' read -r -u 3 ID DEPTH N OPEN EST; do
   [ -z "$ID" ] && continue
   grep -qx "$ID" "$DONE" && continue
-  [ -e state/STOP ] && { log "STOP file present, exiting"; break; }
+  [ -e state/STOP ] || [ -e "state/STOP-$M" ] && { log "STOP file present, exiting"; break; }
+  [ -s "state/jobs-$M.txt" ] && JOBS=$(tr -dc 0-9 < "state/jobs-$M.txt")
   FREE=$(host_free_gb)
   if [ -z "$FREE" ] || [ "$FREE" -lt "$MIN_FREE_GB" ]; then
     log "BLOCKED: host free space ${FREE:-?} GB < $MIN_FREE_GB GB, stopping before $ID"
@@ -58,7 +60,7 @@ while IFS=$'\t' read -r -u 3 ID DEPTH N OPEN EST; do
     commit "state: $M stopped on disk guard"; break
   fi
   echo "$M: $ID (depth $DEPTH) since $(date -u +%T) UTC" > "state/running-$M.txt"; cat state/running-*.txt > state/running.txt 2>/dev/null
-  log "start $ID depth=$DEPTH modules=$N est_new_builds=$EST host_free=${FREE}GB"
+  log "start $ID depth=$DEPTH modules=$N est_new_builds=$EST host_free=${FREE}GB jobs=$JOBS"
   ensure_mount
   sandbox bash /exchange/in/run-chunk.sh "$ID" "$JOBS" > "logs/run-$ID.outer.log" 2>&1
   log "$(grep -aE 'BUILD_EXIT|MEM_PEAK|AUDIT_EXIT|CHUNK_END' logs/run-$ID.outer.log | tr '\n' ' ')"

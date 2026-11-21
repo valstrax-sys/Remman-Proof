@@ -1,1 +1,6 @@
 [2026-11-21T11:52:27Z] [laptop] start P0002 depth=0 modules=64 est_new_builds=64 host_free=132GB
+[2026-11-21T11:59:08Z] [laptop] BUILD_EXIT P0002 0 2026-11-21T11:58:39Z MEM_PEAK_MIB 10612 MAX_LEAN_PROCS 15 AUDIT_EXIT P0002 0 2026-11-21T11:59:02Z CHUNK_END P0002 build=0 audit=0 2026-11-21T11:59:02Z 
+[2026-11-21T11:59:12Z] [laptop] done P0002: # Chunk P0002 — VÉRIFIÉ (build + audit axiomes)
+[2026-11-21T11:59:12Z] [laptop] STOP file present, exiting
+[2026-11-21T11:59:12Z] [laptop] controller exit
+[2026-11-21T11:59:38Z] [laptop] start P0004 depth=0 modules=64 est_new_builds=64 host_free=128GB jobs=10

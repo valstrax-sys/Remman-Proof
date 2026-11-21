@@ -6,3 +6,5 @@
 [2026-11-21T11:58:06Z] [main] done P0005: # Chunk P0005 — VÉRIFIÉ (build + audit axiomes)
 [2026-11-21T11:58:06Z] [main] STOP file present, exiting
 [2026-11-21T11:58:06Z] [main] controller exit
+[2026-11-21T11:59:36Z] [main] start P0007 depth=0 modules=64 est_new_builds=64 host_free=112GB jobs=11
+[2026-11-21T12:01:48Z] [main] BUILD_EXIT P0007 0 2026-11-21T12:01:29Z MEM_PEAK_MIB 9064 MAX_LEAN_PROCS 11 AUDIT_EXIT P0007 0 2026-11-21T12:01:42Z CHUNK_END P0007 build=0 audit=0 2026-11-21T12:01:42Z 
