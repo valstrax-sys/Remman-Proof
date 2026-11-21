@@ -1,17 +1,17 @@
 # STATE — vérification distribuée de l'archive Lean d'Alpöge
 
-Mis à jour : 2026-11-21 14:52 UTC
+Mis à jour : 2026-11-21 14:53 UTC
 
 ## Résumé
 
-- Chunks vérifiés (build exit 0 + audit axiomes OK) : **146** (9319 modules cibles, 885 imports reconstruits en plus)
+- Chunks vérifiés (build exit 0 + audit axiomes OK) : **147** (9383 modules cibles, 912 imports reconstruits en plus)
 - Chunks en échec / non concluants : **0** 
 - En cours : rien
-- Débit principale : 3311 modules/heure (8540 modules en 2.58 h de build) ; file `state/queue-main.txt` : 120/228 faits ; prochains : P0166, P0168, P0170, P0172, P0174
+- Débit principale : 3315 modules/heure (8631 modules en 2.60 h de build) ; file `state/queue-main.txt` : 121/228 faits ; prochains : P0166, P0168, P0170, P0172, P0174
 - Débit portable : 1820 modules/heure (1664 modules en 0.91 h de build) ; file `state/queue-laptop.txt` : 26/172 faits ; prochains : P0060, P0063, P0065, P0067, P0069
-- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 28/282 faits ; prochains : P0123, P0125, P0127, P0130, P0132
+- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 29/282 faits ; prochains : P0125, P0127, P0130, P0132, P0134
 - Disque : laptop :  Go libres sur le disque hôte (13:04:09 UTC)
-main : 66 Go libres sur le disque hôte (14:52:20 UTC)
+main : 66 Go libres sur le disque hôte (14:53:55 UTC)
 
 ## Bloquants / décisions utilisateur
 
@@ -147,6 +147,7 @@ main : 66 Go libres sur le disque hôte (14:52:20 UTC)
 | [P0120](../reports/P0120.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 25 | 174.3 | 2026-11-21T14:51:36 |
 | [P0121](../reports/P0121.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 12 | 71.7 | 2026-11-21T13:31:19 |
 | [P0122](../reports/P0122.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 34 | 83.6 | 2026-11-21T13:32:52 |
+| [P0123](../reports/P0123.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 27 | 86.6 | 2026-11-21T14:53:35 |
 | [P0124](../reports/P0124.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 11 | 69.9 | 2026-11-21T13:34:12 |
 | [P0126](../reports/P0126.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 32 | 89.5 | 2026-11-21T13:35:49 |
 | [P0128](../reports/P0128.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 11 | 100.3 | 2026-11-21T13:37:38 |
