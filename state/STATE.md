@@ -6,10 +6,10 @@ Mis à jour : 2026-11-21 12:08 UTC
 
 - Chunks vérifiés (build exit 0 + audit axiomes OK) : **13** (832 modules cibles, 0 imports reconstruits en plus)
 - Chunks en échec / non concluants : **0** 
-- En cours : laptop: P0009 (depth 0) since 12:06:11 UTC
+- En cours : rien
 - Débit principale : 1821 modules/heure (832 modules en 0.46 h de build) ; file `state/queue-main.txt` : 9/228 faits ; prochains : P0017, P0019, P0021, P0023, P0025
 - Débit portable : 0 modules/heure (0 modules en 0.00 h de build) ; file `state/queue-laptop.txt` : 4/172 faits ; prochains : P0011, P0013, P0015, P0018, P0020
-- Disque : laptop : 127 Go libres sur le disque hôte (12:06:09 UTC)
+- Disque : laptop : 127 Go libres sur le disque hôte (12:08:25 UTC)
 main : 110 Go libres sur le disque hôte (12:08:24 UTC)
 
 ## Bloquants / décisions utilisateur
