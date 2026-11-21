@@ -124,3 +124,5 @@ FileNotFoundError: [WinError 3] Le chemin d’accès spécifié est introuvable: 'exc
 [2026-11-21T20:39:01Z] [laptop] start P0060 depth=0 modules=64 est_new_builds=64 host_free=119GB jobs=10 try=1
 [2026-11-21T20:39:04Z] [laptop] INTERRUPTED P0060 (remote status 3, no CHUNK_END); will retry
 [2026-11-21T20:39:06Z] [laptop] start P0063 depth=0 modules=64 est_new_builds=64 host_free=119GB jobs=10 try=1
+[2026-11-21T20:42:29Z] [laptop] laptop reachable again after 600s
+[2026-11-21T20:42:30Z] [laptop] start P0362 depth=5 modules=64 est_new_builds=134 host_free=118GB jobs=10 try=1

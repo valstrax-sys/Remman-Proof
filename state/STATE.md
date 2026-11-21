@@ -4,14 +4,14 @@ Mis à jour : 2026-11-21 20:42 UTC
 
 ## Résumé
 
-- Chunks vérifiés (build exit 0 + audit axiomes OK) : **365** (23261 modules cibles, 1129 imports reconstruits en plus)
+- Chunks vérifiés (build exit 0 + audit axiomes OK) : **366** (23325 modules cibles, 1134 imports reconstruits en plus)
 - Chunks en échec / non concluants : **0** 
-- En cours : main: P0366 (depth 5, try 1) since 20:40:39 UTC
-- Débit principale : 3046 modules/heure (22726 modules en 7.46 h de build) ; file `state/queue-main.txt` : 339/228 faits ; prochains : P0366, P0368, P0369, P0371, P0373
+- En cours : laptop: P0362 (depth 5, try 1) since 20:42:30 UTC
+- Débit principale : 3043 modules/heure (22795 modules en 7.49 h de build) ; file `state/queue-main.txt` : 340/228 faits ; prochains : P0368, P0369, P0371, P0373, P0375
 - Débit portable : 1820 modules/heure (1664 modules en 0.91 h de build) ; file `state/queue-laptop.txt` : 26/172 faits ; prochains : P0060, P0063, P0065, P0067, P0069
-- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 247/282 faits ; prochains : P0366, P0367, P0368, P0369, P0370
+- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 248/282 faits ; prochains : P0367, P0368, P0369, P0370, P0371
 - Disque : laptop :  Go libres sur le disque hôte (13:04:09 UTC)
-main : 19 Go libres sur le disque hôte (20:40:38 UTC)
+main : 19 Go libres sur le disque hôte (20:42:48 UTC)
 
 ## Bloquants / décisions utilisateur
 
@@ -404,6 +404,7 @@ h-verif; git push -u origin main`.
 | [P0363](../reports/P0363.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 75.9 | 2026-11-21T20:36:52 |
 | [P0364](../reports/P0364.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 4 | 82.6 | 2026-11-21T20:38:31 |
 | [P0365](../reports/P0365.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 80.4 | 2026-11-21T20:40:10 |
+| [P0366](../reports/P0366.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 5 | 106.6 | 2026-11-21T20:42:15 |
 
 ## Reprise
 
