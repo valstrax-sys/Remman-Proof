@@ -97,3 +97,4 @@ head: cannot open 'reports/P0060.md' for reading: No such file or directory
 [2026-11-21T20:39:06Z] [laptop] start P0063 depth=0 modules=64 est_new_builds=64 host_free=119GB jobs=10 try=1
 [2026-11-21T20:42:29Z] [laptop] laptop reachable again after 600s
 [2026-11-21T20:42:30Z] [laptop] start P0362 depth=5 modules=64 est_new_builds=134 host_free=118GB jobs=10 try=1
+[2026-11-21T20:57:03Z] [laptop] PRE_CHUNK P0362 fresh BUILD_EXIT P0362 0 2026-11-21T20:56:40Z MEM_PEAK_MIB 8336 MAX_LEAN_PROCS 10 AUDIT_EXIT P0362 0 2026-11-21T20:56:58Z CHUNK_END P0362 build=0 audit=0 2026-11-21T20:56:58Z 

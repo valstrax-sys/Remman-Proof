@@ -1048,3 +1048,5 @@
 [2026-11-21T20:54:46Z] [main] done P0373: # Chunk P0373 — VÉRIFIÉ (build + audit axiomes)
 [2026-11-21T20:54:46Z] [main] start P0374 depth=5 modules=64 est_new_builds=104 host_free=19GB jobs=11 try=1
 [2026-11-21T20:56:43Z] [main] PRE_CHUNK P0374 fresh BUILD_EXIT P0374 0 2026-11-21T20:56:28Z MEM_PEAK_MIB 8126 MAX_LEAN_PROCS 11 AUDIT_EXIT P0374 0 2026-11-21T20:56:38Z CHUNK_END P0374 build=0 audit=0 2026-11-21T20:56:39Z 
+[2026-11-21T20:56:45Z] [main] done P0374: # Chunk P0374 — VÉRIFIÉ (build + audit axiomes)
+[2026-11-21T20:56:45Z] [main] start P0375 depth=5 modules=64 est_new_builds=116 host_free=19GB jobs=11 try=1

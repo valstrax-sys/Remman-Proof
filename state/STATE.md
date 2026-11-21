@@ -1,17 +1,16 @@
 # STATE — vérification distribuée de l'archive Lean d'Alpöge
 
-Mis à jour : 2026-11-21 20:56 UTC
+Mis à jour : 2026-11-21 20:57 UTC
 
 ## Résumé
 
-- Chunks vérifiés (build exit 0 + audit axiomes OK) : **374** (23837 modules cibles, 1138 imports reconstruits en plus)
+- Chunks vérifiés (build exit 0 + audit axiomes OK) : **374** (23837 modules cibles, 1390 imports reconstruits en plus)
 - Chunks en échec / non concluants : **0** 
-- En cours : laptop: P0362 (depth 5, try 1) since 20:42:30 UTC
-main: P0375 (depth 5, try 1) since 20:56:45 UTC
-- Débit principale : 3041 modules/heure (23311 modules en 7.67 h de build) ; file `state/queue-main.txt` : 348/228 faits ; prochains : P0375, P0376, P0378, P0379, P0381
-- Débit portable : 1820 modules/heure (1664 modules en 0.91 h de build) ; file `state/queue-laptop.txt` : 26/172 faits ; prochains : P0060, P0063, P0065, P0067, P0069
+- En cours : main: P0375 (depth 5, try 1) since 20:56:45 UTC
+- Débit principale : 3049 modules/heure (23245 modules en 7.62 h de build) ; file `state/queue-main.txt` : 348/228 faits ; prochains : P0375, P0376, P0378, P0379, P0381
+- Débit portable : 1725 modules/heure (1982 modules en 1.15 h de build) ; file `state/queue-laptop.txt` : 27/172 faits ; prochains : P0060, P0063, P0065, P0067, P0069
 - File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 256/282 faits ; prochains : P0375, P0376, P0377, P0378, P0379
-- Disque : laptop :  Go libres sur le disque hôte (13:04:09 UTC)
+- Disque : laptop : 117 Go libres sur le disque hôte (20:57:07 UTC)
 main : 19 Go libres sur le disque hôte (20:56:44 UTC)
 
 ## Bloquants / décisions utilisateur
@@ -402,7 +401,7 @@ h-verif; git push -u origin main`.
 | [P0359](../reports/P0359.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 1 | 75.9 | 2026-11-21T20:29:45 |
 | [P0360](../reports/P0360.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 64.8 | 2026-11-21T20:31:05 |
 | [P0361](../reports/P0361.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 1 | 78.1 | 2026-11-21T20:32:38 |
-| [P0362](../reports/P0362.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 2 | 150.8 | 2026-11-21T20:35:20 |
+| [P0362](../reports/P0362.md) | portable | VÉRIFIÉ (build + audit axiomes) | 64 | 254 | 845.7 | 2026-11-21T20:56:29 |
 | [P0363](../reports/P0363.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 75.9 | 2026-11-21T20:36:52 |
 | [P0364](../reports/P0364.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 4 | 82.6 | 2026-11-21T20:38:31 |
 | [P0365](../reports/P0365.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 80.4 | 2026-11-21T20:40:10 |
