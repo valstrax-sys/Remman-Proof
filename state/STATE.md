@@ -4,12 +4,12 @@ Mis à jour : 2026-11-21 12:51 UTC
 
 ## Résumé
 
-- Chunks vérifiés (build exit 0 + audit axiomes OK) : **63** (4032 modules cibles, 0 imports reconstruits en plus)
+- Chunks vérifiés (build exit 0 + audit axiomes OK) : **64** (4096 modules cibles, 0 imports reconstruits en plus)
 - Chunks en échec / non concluants : **0** 
-- En cours : laptop: P0049 (depth 0) since 12:49:58 UTC
+- En cours : main: P0077 (depth 0) since 12:51:04 UTC
 - Débit principale : 3223 modules/heure (2688 modules en 0.83 h de build) ; file `state/queue-main.txt` : 42/228 faits ; prochains : P0077, P0079, P0080, P0082, P0084
-- Débit portable : 1759 modules/heure (1344 modules en 0.76 h de build) ; file `state/queue-laptop.txt` : 21/172 faits ; prochains : P0049, P0051, P0054, P0056, P0058
-- Disque : laptop : 120 Go libres sur le disque hôte (12:49:56 UTC)
+- Débit portable : 1783 modules/heure (1408 modules en 0.79 h de build) ; file `state/queue-laptop.txt` : 22/172 faits ; prochains : P0051, P0054, P0056, P0058, P0060
+- Disque : laptop : 120 Go libres sur le disque hôte (12:51:59 UTC)
 main : 98 Go libres sur le disque hôte (12:51:03 UTC)
 
 ## Bloquants / décisions utilisateur
@@ -70,6 +70,7 @@ main : 98 Go libres sur le disque hôte (12:51:03 UTC)
 | [P0046](../reports/P0046.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 68.5 | 2026-11-21T12:30:30 |
 | [P0047](../reports/P0047.md) | portable | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 93.0 | 2026-11-21T12:49:28 |
 | [P0048](../reports/P0048.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 62.6 | 2026-11-21T12:31:46 |
+| [P0049](../reports/P0049.md) | portable | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 93.3 | 2026-11-21T12:51:28 |
 | [P0050](../reports/P0050.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 54.7 | 2026-11-21T12:32:52 |
 | [P0052](../reports/P0052.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 54.1 | 2026-11-21T12:33:57 |
 | [P0053](../reports/P0053.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 55.6 | 2026-11-21T12:35:02 |
