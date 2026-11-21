@@ -463,3 +463,7 @@ P0108 VÉRIFIÉ (build + audit axiomes) built 89 peak 9135 elapsed 86.6
 [2026-11-21T14:42:34Z] [main] start P0111 depth=1 modules=64 est_new_builds=82 host_free=69GB jobs=11 try=1
 [2026-11-21T14:44:14Z] [main] PRE_CHUNK P0111 fresh BUILD_EXIT P0111 0 2026-11-21T14:43:56Z MEM_PEAK_MIB 7023 MAX_LEAN_PROCS 11 AUDIT_EXIT P0111 0 2026-11-21T14:44:08Z CHUNK_END P0111 build=0 audit=0 2026-11-21T14:44:08Z 
 P0111 VÉRIFIÉ (build + audit axiomes) built 99 peak 7023 elapsed 91.6
+[2026-11-21T14:44:15Z] [main] done P0111: # Chunk P0111 â€” VÃ‰RIFIÃ‰ (build + audit axiomes)
+[2026-11-21T14:44:16Z] [main] start P0113 depth=1 modules=64 est_new_builds=79 host_free=68GB jobs=11 try=1
+[2026-11-21T14:45:58Z] [main] PRE_CHUNK P0113 fresh BUILD_EXIT P0113 0 2026-11-21T14:45:41Z MEM_PEAK_MIB 7876 MAX_LEAN_PROCS 11 AUDIT_EXIT P0113 0 2026-11-21T14:45:53Z CHUNK_END P0113 build=0 audit=0 2026-11-21T14:45:53Z 
+P0113 VÉRIFIÉ (build + audit axiomes) built 98 peak 7876 elapsed 95.9
