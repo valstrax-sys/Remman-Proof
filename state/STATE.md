@@ -1,17 +1,17 @@
 # STATE — vérification distribuée de l'archive Lean d'Alpöge
 
-Mis à jour : 2026-11-21 14:21 UTC
+Mis à jour : 2026-11-21 14:22 UTC
 
 ## Résumé
 
 - Chunks vérifiés (build exit 0 + audit axiomes OK) : **119** (7591 modules cibles, 580 imports reconstruits en plus)
-- Chunks en échec / non concluants : **8** P0060 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0063 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0065 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0067 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0069 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0072 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0074 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0076 (BUILD OK MAIS CIBLES SANS LIGNE Built)
+- Chunks en échec / non concluants : **9** P0060 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0063 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0065 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0067 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0069 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0072 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0074 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0076 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0078 (BUILD OK MAIS CIBLES SANS LIGNE Built)
 - En cours : rien
-- Débit principale : 3223 modules/heure (6507 modules en 2.02 h de build) ; file `state/queue-main.txt` : 101/228 faits ; prochains : P0166, P0168, P0170, P0172, P0174
+- Débit principale : 3223 modules/heure (6507 modules en 2.02 h de build) ; file `state/queue-main.txt` : 102/228 faits ; prochains : P0166, P0168, P0170, P0172, P0174
 - Débit portable : 1820 modules/heure (1664 modules en 0.91 h de build) ; file `state/queue-laptop.txt` : 26/172 faits ; prochains : P0060, P0063, P0065, P0067, P0069
-- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 9/282 faits ; prochains : P0078, P0081, P0083, P0085, P0087
+- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 10/282 faits ; prochains : P0081, P0083, P0085, P0087, P0090
 - Disque : laptop :  Go libres sur le disque hôte (13:04:09 UTC)
-main : 74 Go libres sur le disque hôte (14:21:13 UTC)
+main : 74 Go libres sur le disque hôte (14:22:23 UTC)
 
 ## Bloquants / décisions utilisateur
 
@@ -102,6 +102,7 @@ main : 74 Go libres sur le disque hôte (14:21:13 UTC)
 | [P0075](../reports/P0075.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 95.2 | 2026-11-21T12:50:41 |
 | [P0076](../reports/P0076.md) | principale | BUILD OK MAIS CIBLES SANS LIGNE Built | 64 | 0 | 57.7 | 2026-11-21T14:20:51 |
 | [P0077](../reports/P0077.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 64.0 | 2026-11-21T12:51:57 |
+| [P0078](../reports/P0078.md) | principale | BUILD OK MAIS CIBLES SANS LIGNE Built | 64 | 0 | 52.3 | 2026-11-21T14:21:57 |
 | [P0079](../reports/P0079.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 59.0 | 2026-11-21T12:53:09 |
 | [P0080](../reports/P0080.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 132.7 | 2026-11-21T12:55:28 |
 | [P0082](../reports/P0082.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 54.1 | 2026-11-21T12:56:42 |
