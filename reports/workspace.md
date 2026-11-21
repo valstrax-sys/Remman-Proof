@@ -108,3 +108,8 @@ On suit le README et `CONTRIBUTING.md` de `rohanarun/alpoge-rh-replay` au commit
   - Enfin `wsl --import rhbuild F:\rh-verif\wsl F:\rh-verif\rhbuild-export.tar`. Le nouveau VHDX ne contient que les données réelles (environ 28 Go).
   - `/etc/wsl.conf` (utilisateur par défaut `builder`, automount et interop désactivés) fait partie de l'archive : l'isolation est conservée.
 - **Si la compilation reprend un jour**, elle tournera depuis F: (disque dur), donc plus lentement. Le garde-fou disque des contrôleurs vise G: ; il faudra l'adapter à F: (`host_free_gb`).
+- **Après l'import** (21/11, 22:25 heure locale) :
+  - le VHDX `F:\rh-verif\wsl\ext4.vhdx` fait 29,6 Go, l'ext4 est occupé à 28 Go ;
+  - utilisateur par défaut `builder`, `/root` en 700, un seul montage drvfs (l'échange) ;
+  - `lake build --no-build` sur P0001, P0273 et P0378 répond « All targets up-to-date » : rien n'a été perdu ;
+  - `F:\rh-verif\rhbuild-export.tar` (24,4 Go) est conservé comme sauvegarde, et peut être supprimé si la place manque.

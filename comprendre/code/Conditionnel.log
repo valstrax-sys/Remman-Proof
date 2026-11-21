@@ -1,0 +1,7 @@
+Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+cb9c9c3ef25b173a689afc27d85c71b2f19f2f6fe600ed204db020367d420556  /work/scratch/Conditionnel.lean
+'pas_de_zero_droite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'zero_egal_symetrique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'pas_de_zero_L' depends on axioms: [propext, Classical.choice, Quot.sound]
+elapsed=356.67s maxrss=6479816kB
+EXIT 0

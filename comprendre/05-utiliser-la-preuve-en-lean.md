@@ -70,7 +70,7 @@ Avantages :
 
 Pour GRH, on prend de la même manière une hypothèse `(hGRH : DirichletLZerosOnLine)`. On recopie alors la définition depuis `Statements.lean`, qui n'importe que Mathlib.
 
-Le premier fichier (`pas_de_zero_droite`) a été compilé contre Mathlib `0df444a3` dans notre sandbox (voir 5.5). Le second exige que `Main` soit compilé en entier : il n'a **pas** été compilé ici.
+Le premier fichier (`pas_de_zero_droite`) a été compilé contre Mathlib `0df444a3` dans notre sandbox (code de sortie 0, voir 5.5). Le second exige que `Main` soit compilé en entier : il n'a **pas** été compilé ici.
 
 ## 5.4 Mise en place d'un projet
 
@@ -93,4 +93,10 @@ Le nom exact du paquet de l'archive est celui qui est déclaré dans son `lakefi
 
 ## 5.5 Vérification faite ici
 
-Voir [`code/Conditionnel.lean`](code/Conditionnel.lean) et le journal [`code/Conditionnel.log`](code/Conditionnel.log). Le fichier a été compilé avec `lake env lean` dans la sandbox `rhbuild` : Lean 4.33.1, Mathlib `0df444a3`. Le journal est rempli quand la compilation a eu lieu.
+[`code/Conditionnel.lean`](code/Conditionnel.lean) (sha256 `cb9c9c3e…0556`) a été compilé le 21/11/2026 avec `lake env lean`, dans la sandbox `rhbuild` désormais sur F: (Lean 4.33.1 `819816b2`, Mathlib `0df444a3`).
+
+- **Code de sortie 0**, en 357 s, dont l'essentiel pour charger Mathlib depuis un disque dur. Pic mémoire : 6,5 Go.
+- Les trois théorèmes conditionnels (`pas_de_zero_droite`, `zero_egal_symetrique`, `pas_de_zero_L`) ne dépendent que de `propext`, `Classical.choice` et `Quot.sound`.
+- Journal complet : [`code/Conditionnel.log`](code/Conditionnel.log).
+
+Le fichier final, qui contient `import Main`, n'a pas été compilé ici : il faudrait d'abord les 175 187 modules.
