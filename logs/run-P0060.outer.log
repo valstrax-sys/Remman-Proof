@@ -1,0 +1,5 @@
+LEAN_NUM_THREADS=10
+CHUNK_START P0060 2026-11-21T13:01:18Z tracker=0ca43af1f884e306c45b6bfac10885b2bb31315c
+DISK_BEFORE 25515540480 1000593281024
+Read from remote host 192.168.1.143: Connection reset by peer
+client_loop: send disconnect: Connection reset by peer
