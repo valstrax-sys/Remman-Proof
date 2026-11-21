@@ -120,3 +120,7 @@ FileNotFoundError: [WinError 3] Le chemin d’accès spécifié est introuvable: 'exc
 [2026-11-21T19:30:56Z] [laptop] UNREACHABLE: laptop does not answer on SSH, waiting (checks every 5 min)
 [2026-11-21T20:31:45Z] [laptop] UNREACHABLE for 6 h, giving up
 [2026-11-21T20:32:14Z] [laptop] UNREACHABLE: laptop does not answer on SSH, waiting (checks every 5 min)
+[2026-11-21T20:38:59Z] [laptop] laptop reachable again after 3900s
+[2026-11-21T20:39:01Z] [laptop] start P0060 depth=0 modules=64 est_new_builds=64 host_free=119GB jobs=10 try=1
+[2026-11-21T20:39:04Z] [laptop] INTERRUPTED P0060 (remote status 3, no CHUNK_END); will retry
+[2026-11-21T20:39:06Z] [laptop] start P0063 depth=0 modules=64 est_new_builds=64 host_free=119GB jobs=10 try=1
