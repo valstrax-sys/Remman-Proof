@@ -4,12 +4,12 @@ Mis à jour : 2026-11-21 12:35 UTC
 
 ## Résumé
 
-- Chunks vérifiés (build exit 0 + audit axiomes OK) : **44** (2816 modules cibles, 0 imports reconstruits en plus)
+- Chunks vérifiés (build exit 0 + audit axiomes OK) : **45** (2880 modules cibles, 0 imports reconstruits en plus)
 - Chunks en échec / non concluants : **0** 
-- En cours : laptop: P0033 (depth 0) since 12:33:35 UTC
+- En cours : main: P0055 (depth 0) since 12:35:23 UTC
 - Débit principale : 3122 modules/heure (1920 modules en 0.61 h de build) ; file `state/queue-main.txt` : 30/228 faits ; prochains : P0055, P0057, P0059, P0061, P0062
-- Débit portable : 1634 modules/heure (896 modules en 0.55 h de build) ; file `state/queue-laptop.txt` : 14/172 faits ; prochains : P0033, P0036, P0038, P0040, P0042
-- Disque : laptop : 123 Go libres sur le disque hôte (12:33:33 UTC)
+- Débit portable : 1660 modules/heure (960 modules en 0.58 h de build) ; file `state/queue-laptop.txt` : 15/172 faits ; prochains : P0036, P0038, P0040, P0042, P0045
+- Disque : laptop : 123 Go libres sur le disque hôte (12:35:50 UTC)
 main : 102 Go libres sur le disque hôte (12:35:22 UTC)
 
 ## Bloquants / décisions utilisateur
@@ -54,6 +54,7 @@ main : 102 Go libres sur le disque hôte (12:35:22 UTC)
 | [P0030](../reports/P0030.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 59.2 | 2026-11-21T12:19:01 |
 | [P0031](../reports/P0031.md) | portable | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 101.8 | 2026-11-21T12:33:00 |
 | [P0032](../reports/P0032.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 60.3 | 2026-11-21T12:20:13 |
+| [P0033](../reports/P0033.md) | portable | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 107.8 | 2026-11-21T12:35:19 |
 | [P0034](../reports/P0034.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 58.8 | 2026-11-21T12:21:23 |
 | [P0035](../reports/P0035.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 65.0 | 2026-11-21T12:22:39 |
 | [P0037](../reports/P0037.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 62.0 | 2026-11-21T12:23:55 |
