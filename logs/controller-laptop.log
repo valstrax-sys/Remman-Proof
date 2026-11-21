@@ -115,3 +115,4 @@ FileNotFoundError: [WinError 3] Le chemin d’accès spécifié est introuvable: 'exc
 [2026-11-21T13:04:31Z] [laptop] BLOCKED: host free space ? GB < 20 GB, stopping before P0063
 [2026-11-21T13:04:31Z] [laptop] controller exit
 [2026-11-21T13:12:43Z] [laptop] UNREACHABLE: laptop does not answer on SSH, waiting (checks every 5 min)
+[2026-11-21T14:13:54Z] [laptop] UNREACHABLE: laptop does not answer on SSH, waiting (checks every 5 min)

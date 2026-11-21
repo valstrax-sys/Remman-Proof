@@ -1,17 +1,17 @@
 # STATE — vérification distribuée de l'archive Lean d'Alpöge
 
-Mis à jour : 2026-11-21 14:13 UTC
+Mis à jour : 2026-11-21 14:14 UTC
 
 ## Résumé
 
 - Chunks vérifiés (build exit 0 + audit axiomes OK) : **119** (7591 modules cibles, 580 imports reconstruits en plus)
-- Chunks en échec / non concluants : **1** P0060 (BUILD OK MAIS CIBLES SANS LIGNE Built)
+- Chunks en échec / non concluants : **2** P0060 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0063 (BUILD OK MAIS CIBLES SANS LIGNE Built)
 - En cours : rien
-- Débit principale : 3223 modules/heure (6507 modules en 2.02 h de build) ; file `state/queue-main.txt` : 94/228 faits ; prochains : P0166, P0168, P0170, P0172, P0174
+- Débit principale : 3223 modules/heure (6507 modules en 2.02 h de build) ; file `state/queue-main.txt` : 95/228 faits ; prochains : P0166, P0168, P0170, P0172, P0174
 - Débit portable : 1820 modules/heure (1664 modules en 0.91 h de build) ; file `state/queue-laptop.txt` : 26/172 faits ; prochains : P0060, P0063, P0065, P0067, P0069
-- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 2/282 faits ; prochains : P0063, P0065, P0067, P0069, P0072
+- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 3/282 faits ; prochains : P0065, P0067, P0069, P0072, P0074
 - Disque : laptop :  Go libres sur le disque hôte (13:04:09 UTC)
-main : 76 Go libres sur le disque hôte (14:13:35 UTC)
+main : 76 Go libres sur le disque hôte (14:14:38 UTC)
 
 ## Bloquants / décisions utilisateur
 
@@ -87,6 +87,7 @@ main : 76 Go libres sur le disque hôte (14:13:35 UTC)
 | [P0060](../reports/P0060.md) | principale | BUILD OK MAIS CIBLES SANS LIGNE Built | 64 | 0 | 41.7 | 2026-11-21T14:13:12 |
 | [P0061](../reports/P0061.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 60.8 | 2026-11-21T12:39:55 |
 | [P0062](../reports/P0062.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 62.9 | 2026-11-21T12:41:10 |
+| [P0063](../reports/P0063.md) | principale | BUILD OK MAIS CIBLES SANS LIGNE Built | 64 | 0 | 47.1 | 2026-11-21T14:14:14 |
 | [P0064](../reports/P0064.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 62.5 | 2026-11-21T12:42:26 |
 | [P0066](../reports/P0066.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 66.4 | 2026-11-21T12:43:46 |
 | [P0068](../reports/P0068.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 73.9 | 2026-11-21T12:45:13 |
