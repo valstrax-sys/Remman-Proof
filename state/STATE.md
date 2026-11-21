@@ -1,16 +1,16 @@
 # STATE — vérification distribuée de l'archive Lean d'Alpöge
 
-Mis à jour : 2026-11-21 13:25 UTC
+Mis à jour : 2026-11-21 13:27 UTC
 
 ## Résumé
 
-- Chunks vérifiés (build exit 0 + audit axiomes OK) : **90** (5735 modules cibles, 138 imports reconstruits en plus)
+- Chunks vérifiés (build exit 0 + audit axiomes OK) : **91** (5799 modules cibles, 153 imports reconstruits en plus)
 - Chunks en échec / non concluants : **0** 
 - En cours : rien
-- Débit principale : 3147 modules/heure (4209 modules en 1.34 h de build) ; file `state/queue-main.txt` : 64/228 faits ; prochains : P0116, P0117, P0119, P0121, P0122
+- Débit principale : 3159 modules/heure (4288 modules en 1.36 h de build) ; file `state/queue-main.txt` : 65/228 faits ; prochains : P0117, P0119, P0121, P0122, P0124
 - Débit portable : 1820 modules/heure (1664 modules en 0.91 h de build) ; file `state/queue-laptop.txt` : 26/172 faits ; prochains : P0060, P0063, P0065, P0067, P0069
 - Disque : laptop :  Go libres sur le disque hôte (13:04:09 UTC)
-main : 89 Go libres sur le disque hôte (13:25:51 UTC)
+main : 89 Go libres sur le disque hôte (13:27:16 UTC)
 
 ## Bloquants / décisions utilisateur
 
@@ -114,6 +114,7 @@ main : 89 Go libres sur le disque hôte (13:25:51 UTC)
 | [P0110](../reports/P0110.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 8 | 78.4 | 2026-11-21T13:22:17 |
 | [P0112](../reports/P0112.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 20 | 106.7 | 2026-11-21T13:24:10 |
 | [P0114](../reports/P0114.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 14 | 71.5 | 2026-11-21T13:25:30 |
+| [P0116](../reports/P0116.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 15 | 72.7 | 2026-11-21T13:26:54 |
 
 ## Reprise
 
