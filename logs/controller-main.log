@@ -411,3 +411,7 @@ P0078 BUILD OK MAIS CIBLES SANS LIGNE Built built 48 peak 8082 elapsed 52.3
 [2026-11-21T14:22:24Z] [main] start P0081 depth=0 modules=64 est_new_builds=64 host_free=74GB jobs=11 try=1
 [2026-11-21T14:23:55Z] [main] PRE_CHUNK P0081 fresh BUILD_EXIT P0081 0 2026-11-21T14:23:38Z MEM_PEAK_MIB 7380 MAX_LEAN_PROCS 11 AUDIT_EXIT P0081 0 2026-11-21T14:23:50Z CHUNK_END P0081 build=0 audit=0 2026-11-21T14:23:50Z 
 P0081 VÉRIFIÉ (build + audit axiomes ; 15 cibles compilées par un chunk antérieur) built 49 peak 7380 elapsed 75.6
+[2026-11-21T14:23:57Z] [main] done P0081: # Chunk P0081 â€” VÃ‰RIFIÃ‰ (build + audit axiomes ; 15 cibles compilÃ©es par un chunk antÃ©rieur)
+[2026-11-21T14:23:57Z] [main] start P0083 depth=0 modules=64 est_new_builds=64 host_free=74GB jobs=11 try=1
+[2026-11-21T14:24:41Z] [main] PRE_CHUNK P0083 fresh BUILD_EXIT P0083 0 2026-11-21T14:24:25Z MEM_PEAK_MIB 7039 MAX_LEAN_PROCS 11 AUDIT_EXIT P0083 0 2026-11-21T14:24:35Z CHUNK_END P0083 build=0 audit=0 2026-11-21T14:24:35Z 
+P0083 VÉRIFIÉ (build + audit axiomes ; 29 cibles compilées par un chunk antérieur) built 35 peak 7039 elapsed 33.0
