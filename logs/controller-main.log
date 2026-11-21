@@ -1019,3 +1019,7 @@ P0279 VÉRIFIÉ (build + audit axiomes) built 64 peak 8780 elapsed 83.1
 [2026-11-21T18:27:20Z] [main] start P0280 depth=3 modules=64 est_new_builds=111 host_free=19GB jobs=11 try=1
 [2026-11-21T18:30:19Z] [main] PRE_CHUNK P0280 fresh BUILD_EXIT P0280 0 2026-11-21T18:30:03Z MEM_PEAK_MIB 9050 MAX_LEAN_PROCS 11 AUDIT_EXIT P0280 0 2026-11-21T18:30:16Z CHUNK_END P0280 build=0 audit=0 2026-11-21T18:30:16Z 
 P0280 VÉRIFIÉ (build + audit axiomes) built 65 peak 9050 elapsed 164.5
+[2026-11-21T18:30:20Z] [main] done P0280: # Chunk P0280 â€” VÃ‰RIFIÃ‰ (build + audit axiomes)
+[2026-11-21T18:30:21Z] [main] start P0281 depth=3 modules=64 est_new_builds=118 host_free=19GB jobs=11 try=1
+[2026-11-21T18:31:58Z] [main] PRE_CHUNK P0281 fresh BUILD_EXIT P0281 0 2026-11-21T18:31:41Z MEM_PEAK_MIB 7745 MAX_LEAN_PROCS 11 AUDIT_EXIT P0281 0 2026-11-21T18:31:53Z CHUNK_END P0281 build=0 audit=0 2026-11-21T18:31:53Z 
+P0281 VÉRIFIÉ (build + audit axiomes) built 64 peak 7745 elapsed 80.3
