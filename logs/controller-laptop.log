@@ -113,3 +113,4 @@ Traceback (most recent call last):
 FileNotFoundError: [WinError 3] Le chemin d’accès spécifié est introuvable: 'exchange/out/laptop/P0060'
 [2026-11-21T13:04:10Z] [laptop] done P0060: 
 [2026-11-21T13:04:31Z] [laptop] BLOCKED: host free space ? GB < 20 GB, stopping before P0063
+[2026-11-21T13:04:31Z] [laptop] controller exit
