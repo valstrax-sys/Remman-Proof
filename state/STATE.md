@@ -4,13 +4,13 @@ Mis à jour : 2026-11-21 13:01 UTC
 
 ## Résumé
 
-- Chunks vérifiés (build exit 0 + audit axiomes OK) : **75** (4800 modules cibles, 0 imports reconstruits en plus)
+- Chunks vérifiés (build exit 0 + audit axiomes OK) : **76** (4864 modules cibles, 0 imports reconstruits en plus)
 - Chunks en échec / non concluants : **0** 
-- En cours : main: P0089 (depth 0) since 13:00:40 UTC
-- Débit principale : 3231 modules/heure (3136 modules en 0.97 h de build) ; file `state/queue-main.txt` : 49/228 faits ; prochains : P0089, P0091, P0093, P0094, P0096
+- En cours : laptop: P0060 (depth 0) since 13:01:23 UTC
+- Débit principale : 3237 modules/heure (3200 modules en 0.99 h de build) ; file `state/queue-main.txt` : 50/228 faits ; prochains : P0091, P0093, P0094, P0096, P0098
 - Débit portable : 1820 modules/heure (1664 modules en 0.91 h de build) ; file `state/queue-laptop.txt` : 26/172 faits ; prochains : P0060, P0063, P0065, P0067, P0069
 - Disque : laptop : 119 Go libres sur le disque hôte (13:01:21 UTC)
-main : 96 Go libres sur le disque hôte (13:00:39 UTC)
+main : 95 Go libres sur le disque hôte (13:01:56 UTC)
 
 ## Bloquants / décisions utilisateur
 
@@ -97,6 +97,7 @@ main : 96 Go libres sur le disque hôte (13:00:39 UTC)
 | [P0084](../reports/P0084.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 55.4 | 2026-11-21T12:57:49 |
 | [P0086](../reports/P0086.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 70.8 | 2026-11-21T12:59:09 |
 | [P0088](../reports/P0088.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 55.9 | 2026-11-21T13:00:21 |
+| [P0089](../reports/P0089.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 65.0 | 2026-11-21T13:01:34 |
 
 ## Reprise
 
