@@ -1,17 +1,17 @@
 # STATE — vérification distribuée de l'archive Lean d'Alpöge
 
-Mis à jour : 2026-11-21 15:22 UTC
+Mis à jour : 2026-11-21 15:24 UTC
 
 ## Résumé
 
-- Chunks vérifiés (build exit 0 + audit axiomes OK) : **165** (10535 modules cibles, 1002 imports reconstruits en plus)
+- Chunks vérifiés (build exit 0 + audit axiomes OK) : **166** (10599 modules cibles, 1003 imports reconstruits en plus)
 - Chunks en échec / non concluants : **0** 
 - En cours : rien
-- Débit principale : 3281 modules/heure (9873 modules en 3.01 h de build) ; file `state/queue-main.txt` : 139/228 faits ; prochains : P0166, P0168, P0170, P0172, P0174
+- Débit principale : 3275 modules/heure (9938 modules en 3.03 h de build) ; file `state/queue-main.txt` : 140/228 faits ; prochains : P0168, P0170, P0172, P0174, P0176
 - Débit portable : 1820 modules/heure (1664 modules en 0.91 h de build) ; file `state/queue-laptop.txt` : 26/172 faits ; prochains : P0060, P0063, P0065, P0067, P0069
-- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 47/282 faits ; prochains : P0166, P0167, P0168, P0169, P0170
+- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 48/282 faits ; prochains : P0167, P0168, P0169, P0170, P0171
 - Disque : laptop :  Go libres sur le disque hôte (13:04:09 UTC)
-main : 59 Go libres sur le disque hôte (15:22:12 UTC)
+main : 58 Go libres sur le disque hôte (15:24:01 UTC)
 
 ## Bloquants / décisions utilisateur
 
@@ -190,6 +190,7 @@ main : 59 Go libres sur le disque hôte (15:22:12 UTC)
 | [P0163](../reports/P0163.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 68.3 | 2026-11-21T15:19:38 |
 | [P0164](../reports/P0164.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 11 | 79.6 | 2026-11-21T14:12:07 |
 | [P0165](../reports/P0165.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 1 | 121.8 | 2026-11-21T15:21:47 |
+| [P0166](../reports/P0166.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 1 | 91.7 | 2026-11-21T15:23:32 |
 
 ## Reprise
 
