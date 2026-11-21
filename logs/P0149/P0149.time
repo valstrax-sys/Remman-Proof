@@ -1,0 +1,23 @@
+	Command being timed: "python3 tracker/tasks.py build P0149 /work/vol/lean /work/receipts/P0149 --bundle"
+	User time (seconds): 537.17
+	System time (seconds): 210.09
+	Percent of CPU this job got: 927%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:20.54
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 6825240
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1024
+	Minor (reclaiming a frame) page faults: 16940582
+	Voluntary context switches: 234881
+	Involuntary context switches: 119509
+	Swaps: 0
+	File system inputs: 40056
+	File system outputs: 866752
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
