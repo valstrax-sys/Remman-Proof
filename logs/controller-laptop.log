@@ -1,1 +1,3 @@
 [2026-11-21T11:52:27Z] [laptop] start P0002 depth=0 modules=64 est_new_builds=64 host_free=132GB
+[2026-11-21T11:59:08Z] [laptop] BUILD_EXIT P0002 0 2026-11-21T11:58:39Z MEM_PEAK_MIB 10612 MAX_LEAN_PROCS 15 AUDIT_EXIT P0002 0 2026-11-21T11:59:02Z CHUNK_END P0002 build=0 audit=0 2026-11-21T11:59:02Z 
+P0002 VÉRIFIÉ (build + audit axiomes) built 64 peak 10612 elapsed 356.4

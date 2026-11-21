@@ -5,3 +5,6 @@ P0003 VÉRIFIÉ (build + audit axiomes) built 64 peak 9644 elapsed 193.0
 [2026-11-21T11:56:03Z] [main] start P0005 depth=0 modules=64 est_new_builds=64 host_free=113GB
 [2026-11-21T11:58:05Z] [main] BUILD_EXIT P0005 0 2026-11-21T11:57:45Z MEM_PEAK_MIB 9061 MAX_LEAN_PROCS 11 AUDIT_EXIT P0005 0 2026-11-21T11:57:59Z CHUNK_END P0005 build=0 audit=0 2026-11-21T11:57:59Z 
 P0005 VÉRIFIÉ (build + audit axiomes) built 64 peak 9061 elapsed 104.8
+[2026-11-21T11:58:06Z] [main] done P0005: # Chunk P0005 â€” VÃ‰RIFIÃ‰ (build + audit axiomes)
+[2026-11-21T11:58:06Z] [main] STOP file present, exiting
+[2026-11-21T11:58:06Z] [main] controller exit
