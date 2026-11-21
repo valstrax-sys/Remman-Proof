@@ -1,0 +1,40 @@
+== host: Arkveld user: builder date: 2026-11-21T11:27:09Z
+Linux Arkveld 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+== CPU
+CPU(s):                               12
+Model name:                           AMD Ryzen 7 5800X 8-Core Processor
+Thread(s) per core:                   2
+Core(s) per socket:                   6
+Socket(s):                            1
+nproc=12
+== RAM
+               total        used        free      shared  buff/cache   available
+Mem:              19           0          15           0           3          18
+Swap:             12           0          12
+== Disk
+Filesystem     Type  Size  Used Avail Use% Mounted on
+/dev/sde       ext4 1007G  4.1G  952G   1% /
+/dev/sde       ext4 1007G  4.1G  952G   1% /
+== GPU
+name, memory.total [MiB], driver_version
+NVIDIA GeForce RTX 3080, 10240 MiB, 580.88
+== Tools
+gcc: /usr/bin/gcc | gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+g++: /usr/bin/g++ | g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+clang: MISSING
+make: /usr/bin/make | GNU Make 4.3
+cmake: MISSING
+python3: /usr/bin/python3 | Python 3.12.3
+pip3: MISSING
+git: /usr/bin/git | git version 2.43.0
+curl: /usr/bin/curl | curl 8.5.0 (x86_64-pc-linux-gnu) libcurl/8.5.0 OpenSSL/3.0.13 zlib/1.3 brotli/1.1.0 zstd/1.5.5 libidn2/2.3.7 libpsl/0.21.2 (+libidn2/2.3.7) libssh/0.10.6/openssl/zlib nghttp2/1.59.0 librtmp/2.3 OpenLDAP/2.6.10
+elan: MISSING
+lean: MISSING
+lake: MISSING
+sage: MISSING
+docker: MISSING
+zstd: /usr/bin/zstd | *** Zstandard CLI (64-bit) v1.5.5, by Yann Collet ***
+gh: MISSING
+/usr/bin/time: /usr/bin/time | time (GNU Time) UNKNOWN
+tar: /usr/bin/tar | tar (GNU tar) 1.35
+sha256sum: /usr/bin/sha256sum | sha256sum (GNU coreutils) 9.4

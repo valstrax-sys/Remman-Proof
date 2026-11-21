@@ -1,0 +1,16 @@
+# Never commit build outputs, toolchains, VHDX, sources or secrets
+wsl/
+tools/
+exchange/
+toolchain/
+src/
+build/
+*.olean
+*.olean.*
+*.ilean
+*.vhdx
+.lake/
+*.tar.gz.part*
+.env
+*.pem
+id_*

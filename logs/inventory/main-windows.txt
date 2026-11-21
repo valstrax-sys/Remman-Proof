@@ -1,0 +1,27 @@
+name, memory.total [MiB], driver_version
+NVIDIA GeForce RTX 3080, 10240 MiB, 580.88
+Version WSL : 2.6.3.0
+Version du noyau : 6.6.87.2-1
+Version WSLg : 1.0.71
+Version MSRDC : 1.2.6353
+Version direct3D : 1.611.1-81528511
+Version de DXCore : 10.0.26100.1-240331-1435.ge-release
+Version de Windows : 10.0.26200.9457
+
+
+DriveLetter   : G
+FileSystem    : NTFS
+Size          : 256058060800
+SizeRemaining : 134618386432
+
+
+
+
+FriendlyName              MediaType BusType          Size
+------------              --------- -------          ----
+WDC WD10EZEX-21WN4A0      HDD       SATA    1000204886016
+Samsung SSD 840 EVO 500GB SSD       SATA     500107862016
+SSD 256GB                 SSD       NVMe     256060514304
+SSD 256GB                 SSD       NVMe     256060514304
+
+
