@@ -1,17 +1,17 @@
 # STATE — vérification distribuée de l'archive Lean d'Alpöge
 
-Mis à jour : 2026-11-21 20:57 UTC
+Mis à jour : 2026-11-21 21:00 UTC
 
 ## Résumé
 
-- Chunks vérifiés (build exit 0 + audit axiomes OK) : **374** (23837 modules cibles, 1390 imports reconstruits en plus)
+- Chunks vérifiés (build exit 0 + audit axiomes OK) : **375** (23901 modules cibles, 1390 imports reconstruits en plus)
 - Chunks en échec / non concluants : **0** 
-- En cours : main: P0375 (depth 5, try 1) since 20:56:45 UTC
-- Débit principale : 3049 modules/heure (23245 modules en 7.62 h de build) ; file `state/queue-main.txt` : 348/228 faits ; prochains : P0375, P0376, P0378, P0379, P0381
+- En cours : laptop: P0376 (depth 5, try 1) since 20:57:10 UTC
+- Débit principale : 3038 modules/heure (23309 modules en 7.67 h de build) ; file `state/queue-main.txt` : 349/228 faits ; prochains : P0376, P0378, P0379, P0381, P0384
 - Débit portable : 1725 modules/heure (1982 modules en 1.15 h de build) ; file `state/queue-laptop.txt` : 27/172 faits ; prochains : P0060, P0063, P0065, P0067, P0069
-- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 256/282 faits ; prochains : P0375, P0376, P0377, P0378, P0379
+- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 257/282 faits ; prochains : P0376, P0377, P0378, P0379, P0380
 - Disque : laptop : 117 Go libres sur le disque hôte (20:57:07 UTC)
-main : 19 Go libres sur le disque hôte (20:56:44 UTC)
+main : 19 Go libres sur le disque hôte (21:00:21 UTC)
 
 ## Bloquants / décisions utilisateur
 
@@ -414,6 +414,7 @@ h-verif; git push -u origin main`.
 | [P0372](../reports/P0372.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 70.3 | 2026-11-21T20:52:44 |
 | [P0373](../reports/P0373.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 74.2 | 2026-11-21T20:54:16 |
 | [P0374](../reports/P0374.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 2 | 97.9 | 2026-11-21T20:56:13 |
+| [P0375](../reports/P0375.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 175.4 | 2026-11-21T20:59:25 |
 
 ## Reprise
 
