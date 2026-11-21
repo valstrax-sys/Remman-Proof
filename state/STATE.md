@@ -4,12 +4,12 @@ Mis à jour : 2026-11-21 12:12 UTC
 
 ## Résumé
 
-- Chunks vérifiés (build exit 0 + audit axiomes OK) : **17** (1088 modules cibles, 0 imports reconstruits en plus)
+- Chunks vérifiés (build exit 0 + audit axiomes OK) : **18** (1152 modules cibles, 0 imports reconstruits en plus)
 - Chunks en échec / non concluants : **0** 
-- En cours : laptop: P0013 (depth 0) since 12:10:43 UTC
+- En cours : main: P0023 (depth 0) since 12:12:37 UTC
 - Débit principale : 2571 modules/heure (768 modules en 0.30 h de build) ; file `state/queue-main.txt` : 12/228 faits ; prochains : P0023, P0025, P0026, P0028, P0030
-- Débit portable : 1293 modules/heure (320 modules en 0.25 h de build) ; file `state/queue-laptop.txt` : 5/172 faits ; prochains : P0013, P0015, P0018, P0020, P0022
-- Disque : laptop : 126 Go libres sur le disque hôte (12:10:41 UTC)
+- Débit portable : 1385 modules/heure (384 modules en 0.28 h de build) ; file `state/queue-laptop.txt` : 6/172 faits ; prochains : P0015, P0018, P0020, P0022, P0024
+- Disque : laptop : 126 Go libres sur le disque hôte (12:12:57 UTC)
 main : 109 Go libres sur le disque hôte (12:12:36 UTC)
 
 ## Bloquants / décisions utilisateur
@@ -34,6 +34,7 @@ main : 109 Go libres sur le disque hôte (12:12:36 UTC)
 | [P0010](../reports/P0010.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 69.2 | 2026-11-21T12:04:11 |
 | [P0011](../reports/P0011.md) | portable | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 107.6 | 2026-11-21T12:10:10 |
 | [P0012](../reports/P0012.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 70.0 | 2026-11-21T12:05:35 |
+| [P0013](../reports/P0013.md) | portable | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 107.1 | 2026-11-21T12:12:26 |
 | [P0014](../reports/P0014.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 59.9 | 2026-11-21T12:06:48 |
 | [P0016](../reports/P0016.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 61.2 | 2026-11-21T12:08:02 |
 | [P0017](../reports/P0017.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 82.6 | 2026-11-21T12:09:35 |
