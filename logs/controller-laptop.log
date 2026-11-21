@@ -130,3 +130,5 @@ FileNotFoundError: [WinError 3] Le chemin d’accès spécifié est introuvable: 'exc
 P0362 VÉRIFIÉ (build + audit axiomes) built 318 peak 8336 elapsed 845.7
 [2026-11-21T20:57:08Z] [laptop] done P0362: # Chunk P0362 â€” VÃ‰RIFIÃ‰ (build + audit axiomes)
 [2026-11-21T20:57:10Z] [laptop] start P0376 depth=5 modules=64 est_new_builds=124 host_free=117GB jobs=10 try=1
+[2026-11-21T21:12:28Z] [laptop] PRE_CHUNK P0376 fresh BUILD_EXIT P0376 0 2026-11-21T21:12:05Z MEM_PEAK_MIB 8182 MAX_LEAN_PROCS 10 AUDIT_EXIT P0376 0 2026-11-21T21:12:23Z CHUNK_END P0376 build=0 audit=0 2026-11-21T21:12:23Z 
+P0376 VÉRIFIÉ (build + audit axiomes) built 499 peak 8182 elapsed 901.3

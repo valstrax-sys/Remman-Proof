@@ -98,3 +98,6 @@ head: cannot open 'reports/P0060.md' for reading: No such file or directory
 [2026-11-21T20:42:29Z] [laptop] laptop reachable again after 600s
 [2026-11-21T20:42:30Z] [laptop] start P0362 depth=5 modules=64 est_new_builds=134 host_free=118GB jobs=10 try=1
 [2026-11-21T20:57:03Z] [laptop] PRE_CHUNK P0362 fresh BUILD_EXIT P0362 0 2026-11-21T20:56:40Z MEM_PEAK_MIB 8336 MAX_LEAN_PROCS 10 AUDIT_EXIT P0362 0 2026-11-21T20:56:58Z CHUNK_END P0362 build=0 audit=0 2026-11-21T20:56:58Z 
+[2026-11-21T20:57:08Z] [laptop] done P0362: # Chunk P0362 — VÉRIFIÉ (build + audit axiomes)
+[2026-11-21T20:57:10Z] [laptop] start P0376 depth=5 modules=64 est_new_builds=124 host_free=117GB jobs=10 try=1
+[2026-11-21T21:12:28Z] [laptop] PRE_CHUNK P0376 fresh BUILD_EXIT P0376 0 2026-11-21T21:12:05Z MEM_PEAK_MIB 8182 MAX_LEAN_PROCS 10 AUDIT_EXIT P0376 0 2026-11-21T21:12:23Z CHUNK_END P0376 build=0 audit=0 2026-11-21T21:12:23Z 
