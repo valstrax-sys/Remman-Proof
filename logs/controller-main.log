@@ -147,3 +147,5 @@ P0066 VÉRIFIÉ (build + audit axiomes) built 64 peak 7615 elapsed 66.4
 [2026-11-21T12:44:11Z] [main] start P0068 depth=0 modules=64 est_new_builds=64 host_free=100GB jobs=11
 [2026-11-21T12:45:38Z] [main] BUILD_EXIT P0068 0 2026-11-21T12:45:22Z MEM_PEAK_MIB 7726 MAX_LEAN_PROCS 11 AUDIT_EXIT P0068 0 2026-11-21T12:45:32Z CHUNK_END P0068 build=0 audit=0 2026-11-21T12:45:32Z 
 P0068 VÉRIFIÉ (build + audit axiomes) built 64 peak 7726 elapsed 73.9
+[2026-11-21T12:45:39Z] [main] done P0068: # Chunk P0068 â€” VÃ‰RIFIÃ‰ (build + audit axiomes)
+[2026-11-21T12:45:39Z] [main] start P0070 depth=0 modules=64 est_new_builds=64 host_free=100GB jobs=11
