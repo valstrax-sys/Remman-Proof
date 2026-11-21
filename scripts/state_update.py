@@ -10,7 +10,7 @@ for p in sorted(glob.glob(os.path.join(root, 'reports', 'P*.md')) + glob.glob(os
     rec = os.path.join(root, 'logs', cid, 'receipt.json')
     r = json.load(open(rec)) if os.path.exists(rec) else {}
     txt = open(p, encoding='utf-8').read()
-    mach = 'portable' if 'portable' in txt.split('\n')[4] else 'principale'
+    mach = 'portable' if '| Machine | portable' in txt else 'principale'
     rows.append((cid, mach, status, len(r.get('tasks', [])), r.get('elapsed_seconds', 0), len(r.get('rebuilt_project_modules', [])), r.get('ended_utc', '')[:19]))
 ok = [x for x in rows if x[2].startswith('VÉRIFIÉ')]
 bad = [x for x in rows if not x[2].startswith('VÉRIFIÉ')]
