@@ -321,3 +321,7 @@ P0141 VÉRIFIÉ (build + audit axiomes) built 67 peak 8084 elapsed 64.0
 [2026-11-21T13:50:24Z] [main] start P0143 depth=1 modules=64 est_new_builds=86 host_free=82GB jobs=11 try=1
 [2026-11-21T13:51:51Z] [main] PRE_CHUNK P0143 fresh BUILD_EXIT P0143 0 2026-11-21T13:51:33Z MEM_PEAK_MIB 6873 MAX_LEAN_PROCS 11 AUDIT_EXIT P0143 0 2026-11-21T13:51:45Z CHUNK_END P0143 build=0 audit=0 2026-11-21T13:51:45Z 
 P0143 VÉRIFIÉ (build + audit axiomes) built 86 peak 6873 elapsed 76.5
+[2026-11-21T13:51:52Z] [main] done P0143: # Chunk P0143 â€” VÃ‰RIFIÃ‰ (build + audit axiomes)
+[2026-11-21T13:51:52Z] [main] start P0145 depth=1 modules=64 est_new_builds=84 host_free=82GB jobs=11 try=1
+[2026-11-21T13:53:38Z] [main] PRE_CHUNK P0145 fresh BUILD_EXIT P0145 0 2026-11-21T13:53:21Z MEM_PEAK_MIB 7676 MAX_LEAN_PROCS 11 AUDIT_EXIT P0145 0 2026-11-21T13:53:32Z CHUNK_END P0145 build=0 audit=0 2026-11-21T13:53:32Z 
+P0145 VÉRIFIÉ (build + audit axiomes) built 84 peak 7676 elapsed 93.5
