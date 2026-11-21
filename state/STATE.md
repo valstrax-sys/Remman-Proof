@@ -1,17 +1,17 @@
 # STATE — vérification distribuée de l'archive Lean d'Alpöge
 
-Mis à jour : 2026-11-21 14:19 UTC
+Mis à jour : 2026-11-21 14:20 UTC
 
 ## Résumé
 
 - Chunks vérifiés (build exit 0 + audit axiomes OK) : **119** (7591 modules cibles, 580 imports reconstruits en plus)
-- Chunks en échec / non concluants : **6** P0060 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0063 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0065 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0067 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0069 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0072 (BUILD OK MAIS CIBLES SANS LIGNE Built)
+- Chunks en échec / non concluants : **7** P0060 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0063 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0065 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0067 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0069 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0072 (BUILD OK MAIS CIBLES SANS LIGNE Built), P0074 (BUILD OK MAIS CIBLES SANS LIGNE Built)
 - En cours : rien
-- Débit principale : 3223 modules/heure (6507 modules en 2.02 h de build) ; file `state/queue-main.txt` : 99/228 faits ; prochains : P0166, P0168, P0170, P0172, P0174
+- Débit principale : 3223 modules/heure (6507 modules en 2.02 h de build) ; file `state/queue-main.txt` : 100/228 faits ; prochains : P0166, P0168, P0170, P0172, P0174
 - Débit portable : 1820 modules/heure (1664 modules en 0.91 h de build) ; file `state/queue-laptop.txt` : 26/172 faits ; prochains : P0060, P0063, P0065, P0067, P0069
-- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 7/282 faits ; prochains : P0074, P0076, P0078, P0081, P0083
+- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 8/282 faits ; prochains : P0076, P0078, P0081, P0083, P0085
 - Disque : laptop :  Go libres sur le disque hôte (13:04:09 UTC)
-main : 75 Go libres sur le disque hôte (14:19:06 UTC)
+main : 75 Go libres sur le disque hôte (14:20:02 UTC)
 
 ## Bloquants / décisions utilisateur
 
@@ -98,6 +98,7 @@ main : 75 Go libres sur le disque hôte (14:19:06 UTC)
 | [P0071](../reports/P0071.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 68.7 | 2026-11-21T12:47:54 |
 | [P0072](../reports/P0072.md) | principale | BUILD OK MAIS CIBLES SANS LIGNE Built | 64 | 0 | 24.8 | 2026-11-21T14:18:44 |
 | [P0073](../reports/P0073.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 50.4 | 2026-11-21T12:49:00 |
+| [P0074](../reports/P0074.md) | principale | BUILD OK MAIS CIBLES SANS LIGNE Built | 64 | 0 | 44.3 | 2026-11-21T14:19:42 |
 | [P0075](../reports/P0075.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 95.2 | 2026-11-21T12:50:41 |
 | [P0077](../reports/P0077.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 64.0 | 2026-11-21T12:51:57 |
 | [P0079](../reports/P0079.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 59.0 | 2026-11-21T12:53:09 |
