@@ -1,17 +1,17 @@
 # STATE — vérification distribuée de l'archive Lean d'Alpöge
 
-Mis à jour : 2026-11-21 18:17 UTC
+Mis à jour : 2026-11-21 18:19 UTC
 
 ## Résumé
 
-- Chunks vérifiés (build exit 0 + audit axiomes OK) : **273** (17412 modules cibles, 1075 imports reconstruits en plus)
+- Chunks vérifiés (build exit 0 + audit axiomes OK) : **274** (17476 modules cibles, 1075 imports reconstruits en plus)
 - Chunks en échec / non concluants : **0** 
 - En cours : rien
-- Débit principale : 3060 modules/heure (16823 modules en 5.50 h de build) ; file `state/queue-main.txt` : 247/228 faits ; prochains : P0274, P0275, P0277, P0279, P0280
+- Débit principale : 3060 modules/heure (16887 modules en 5.52 h de build) ; file `state/queue-main.txt` : 248/228 faits ; prochains : P0275, P0277, P0279, P0280, P0283
 - Débit portable : 1820 modules/heure (1664 modules en 0.91 h de build) ; file `state/queue-laptop.txt` : 26/172 faits ; prochains : P0060, P0063, P0065, P0067, P0069
-- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 155/282 faits ; prochains : P0274, P0275, P0276, P0277, P0278
+- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 156/282 faits ; prochains : P0275, P0276, P0277, P0278, P0279
 - Disque : laptop :  Go libres sur le disque hôte (13:04:09 UTC)
-main : 19 Go libres sur le disque hôte (18:17:35 UTC)
+main : 19 Go libres sur le disque hôte (18:19:53 UTC)
 
 ## Bloquants / décisions utilisateur
 
@@ -22,6 +22,14 @@ main : 19 Go libres sur le disque hôte (18:17:35 UTC)
 4. **Portable injoignable depuis ~13:01 UTC** (SSH timeout, hôte injoignable au ping) — probablement mise en veille Windows. Le chunk P0060 en cours a été perdu (sera relancé proprement : sorties des cibles supprimées puis recompilées). Je ne modifie pas les réglages d'alimentation du portable (réglage système). → Désactiver la veille sur secteur (`powercfg /change standby-timeout-ac 0`) si vous voulez qu'il travaille la nuit. Le contrôleur v2 l'attend jusqu'à 6 h et reprend automatiquement.
 - [main] arrêt : espace libre hôte 19 Go < 20 Go avant P0273 (2026-11-21T18:14:27Z)
 - [main] 18:14 UTC : seuil abaissé de 20 à 17 Go (croissance max mesurée par chunk : 0,69 Go → reste ≥ 16 Go ≥ 15 Go exigés).
+5. **Disque G: : décision utilisateur pour aller plus loin.**
+   - Le VHDX de la sandbox fait 118 Go et ne rétrécit pas tout seul. Après le nettoyage des `*.setup.json` (89 Go libérés dans l'ext4, voir `reports/workspace.md`), l'ext4 n'utilise plus que 25 Go, mais G: n'a que 19 Go libres.
+   - L'espace libéré dans l'ext4 est réutilisé par les chunks suivants, donc le VHDX devrait cesser de grossir. Le garde-fou (17 Go) reste actif.
+   - Pour rendre l'espace à G:, au choix (droits admin, ou option « unsafe ») :
+     - `wsl --terminate rhbuild` puis `Optimize-VHD -Path G:\rh-verif\wsl\ext4.vhdx -Mode Full` (PowerShell admin, module Hyper-V) ;
+     - ou diskpart `select vdisk file=G:\rh-verif\wsl\ext4.vhdx` / `compact vdisk` ;
+     - ou `wsl --manage rhbuild --set-sparse true --allow-unsafe`.
+   - Pour un rejeu complet (≈ 175 000 modules), il faudrait aussi plus de temps : ≈ 2 400 modules/h ici, soit environ 3 jours sur cette machine.
 
 ## Chunks
 
@@ -300,6 +308,7 @@ main : 19 Go libres sur le disque hôte (18:17:35 UTC)
 | [P0271](../reports/P0271.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 104.9 | 2026-11-21T18:12:02 |
 | [P0272](../reports/P0272.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 2 | 96.3 | 2026-11-21T18:13:59 |
 | [P0273](../reports/P0273.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 138.0 | 2026-11-21T18:17:01 |
+| [P0274](../reports/P0274.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 73.2 | 2026-11-21T18:19:26 |
 
 ## Reprise
 

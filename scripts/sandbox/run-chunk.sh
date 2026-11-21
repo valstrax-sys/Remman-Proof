@@ -25,4 +25,6 @@ if [ $brc -eq 0 ]; then
   bash /exchange/in/audit-chunk.sh "$id"; arc=$?
 fi
 echo "DISK_AFTER $(df -B1 --output=used,avail / | tail -1)"
+# §5.6 cleanup: drop regenerable Lake compiler inputs (*.setup.json, ~5 MB/module); keep .olean (needed downstream)
+[ -f /exchange/in/cleanup-setupjson.sh ] && bash /exchange/in/cleanup-setupjson.sh | head -1
 echo "CHUNK_END $id build=$brc audit=$arc $(date -u +%FT%TZ)"
