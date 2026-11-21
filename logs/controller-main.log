@@ -345,3 +345,7 @@ P0152 VÉRIFIÉ (build + audit axiomes) built 80 peak 13044 elapsed 109.5
 [2026-11-21T14:00:40Z] [main] start P0154 depth=1 modules=64 est_new_builds=98 host_free=80GB jobs=11 try=1
 [2026-11-21T14:02:19Z] [main] PRE_CHUNK P0154 fresh BUILD_EXIT P0154 0 2026-11-21T14:02:03Z MEM_PEAK_MIB 8558 MAX_LEAN_PROCS 11 AUDIT_EXIT P0154 0 2026-11-21T14:02:13Z CHUNK_END P0154 build=0 audit=0 2026-11-21T14:02:13Z 
 P0154 VÉRIFIÉ (build + audit axiomes) built 98 peak 8558 elapsed 89.7
+[2026-11-21T14:02:20Z] [main] done P0154: # Chunk P0154 â€” VÃ‰RIFIÃ‰ (build + audit axiomes)
+[2026-11-21T14:02:20Z] [main] start P0156 depth=1 modules=64 est_new_builds=65 host_free=79GB jobs=11 try=1
+[2026-11-21T14:03:46Z] [main] PRE_CHUNK P0156 fresh BUILD_EXIT P0156 0 2026-11-21T14:03:30Z MEM_PEAK_MIB 7987 MAX_LEAN_PROCS 11 AUDIT_EXIT P0156 0 2026-11-21T14:03:41Z CHUNK_END P0156 build=0 audit=0 2026-11-21T14:03:41Z 
+P0156 VÉRIFIÉ (build + audit axiomes) built 65 peak 7987 elapsed 73.5
