@@ -1,6 +1,6 @@
 # STATE — vérification distribuée de l'archive Lean d'Alpöge
 
-Mis à jour : 2026-11-21 21:12 UTC
+Mis à jour : 2026-11-21 21:17 UTC
 
 ## Résumé
 

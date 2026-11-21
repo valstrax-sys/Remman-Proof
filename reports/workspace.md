@@ -95,3 +95,16 @@ On suit le README et `CONTRIBUTING.md` de `rohanarun/alpoge-rh-replay` au commit
     - ou déplacement d'autres données de G:.
 - **Pause demandée à 23:00 heure locale (22:00 UTC)** : `scripts/pause-at.sh 22:00` crée `state/STOP`. Les contrôleurs terminent leur chunk en cours puis s'arrêtent. `scripts/pusher.sh` pousse les derniers commits, puis s'arrête.
   - Reprise : supprimer `state/STOP`, puis relancer `MIN_FREE_GB=17 QUEUE=state/queue-shared.txt bash scripts/controller.sh main`, la même commande avec `laptop`, et `bash scripts/pusher.sh`.
+
+## Changement de programme (21/11/2026, 22:00 heure locale)
+
+À la demande de l'utilisateur, on **arrête la compilation** et on **déplace l'espace de travail de la sandbox** (le VHDX de 118 Go) sur un disque dur. Le travail porte désormais sur la compréhension et l'utilisation de la preuve : voir `comprendre/`.
+
+- **Arrêt.** Création de `state/STOP` à 21:02 UTC. Les deux contrôleurs ont fini leur chunk en cours, puis se sont arrêtés proprement. Bilan final : **378 chunks vérifiés, 0 échec, 24 095 modules distincts sur 175 187 (13,8 %)** ; détail dans `state/STATE.md`.
+- **Déplacement.**
+  - `wsl --manage rhbuild --move` a échoué avec `ERROR_SHARING_VIOLATION`. Le VHDX restait attaché à la VM WSL partagée avec Kali (`/dev/sde`). Le seul moyen de le libérer, `wsl --shutdown`, aurait fermé la session Kali ouverte (bureau `lightdm` et deux shells), donc on ne l'a pas utilisé.
+  - On a donc fait `wsl --export rhbuild F:\rh-verif\rhbuild-export.tar` : 24,4 Go, 589 776 entrées vérifiées par `tar -tf`, dont 34 450 `.olean` et 1 405 entrées de receipts.
+  - Puis `wsl --unregister rhbuild`, ce qui a supprimé `G:\rh-verif\wsl\ext4.vhdx` et libéré environ 118 Go sur G:.
+  - Enfin `wsl --import rhbuild F:\rh-verif\wsl F:\rh-verif\rhbuild-export.tar`. Le nouveau VHDX ne contient que les données réelles (environ 28 Go).
+  - `/etc/wsl.conf` (utilisateur par défaut `builder`, automount et interop désactivés) fait partie de l'archive : l'isolation est conservée.
+- **Si la compilation reprend un jour**, elle tournera depuis F: (disque dur), donc plus lentement. Le garde-fou disque des contrôleurs vise G: ; il faudra l'adapter à F: (`host_free_gb`).

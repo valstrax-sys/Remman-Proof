@@ -1,0 +1,24 @@
+== Primalité déterministe (Miller, borne de Bach 2 ln² n) ==
+  n = 561  bases ≤ 80  premier ? False
+  n = 2147483647  bases ≤ 923  premier ? True
+  n = 998244359987710471  bases ≤ 3435  premier ? False
+  n = 618970019642690137449562111  bases ≤ 7611  premier ? True
+  n = 170141183460469231731687303715884105727  bases ≤ 15498  premier ? True
+
+== Racine carrée modulaire déterministe ==
+  sqrt(2) mod 1000000007 = 940286407  (vérif : 2)  non-résidu utilisé : 5 (borne 2 ln² p = 858.9)
+
+== Écart π(x) − li(x) et borne de Schoenfeld ==
+  x =     10000  π =    1229  li =       1246.1  |écart| =     17.1  borne =      36.6  OK
+  x =    100000  π =    9592  li =       9629.8  |écart| =     37.8  borne =     144.9  OK
+  x =   1000000  π =   78498  li =      78627.5  |écart| =    129.5  borne =     549.7  OK
+  x =  10000000  π =  664579  li =     664918.4  |écart| =    339.4  borne =    2028.0  OK
+
+== Robin : σ(n) < e^γ n ln ln n (n > 5040) ==
+  jusqu'à 2·10^5 : pire n = 10080, σ(n)/(n ln ln n) = 1.75581 < e^γ = 1.78107 : True
+  Lagarias jusqu'à 2·10^5 : premier contre-exemple = None
+
+== Plus petit premier en progression arithmétique (borne 2(q ln q)²) ==
+  q =   101  max_a p_min(a, q) =     2143  borne =       434549
+  q =  1009  max_a p_min(a, q) =    54193  borne =     97411918
+  q =  9973  max_a p_min(a, q) =   925949  borne =  16864675385
