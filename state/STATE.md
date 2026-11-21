@@ -1,12 +1,12 @@
 # STATE — vérification distribuée de l'archive Lean d'Alpöge
 
-Mis à jour : 2026-11-21 18:31 UTC
+Mis à jour : 2026-11-21 18:33 UTC
 
 ## Résumé
 
 - Chunks vérifiés (build exit 0 + audit axiomes OK) : **281** (17924 modules cibles, 1076 imports reconstruits en plus)
 - Chunks en échec / non concluants : **0** 
-- En cours : rien
+- En cours : main: P0282 (depth 3, try 1) since 18:32:00 UTC
 - Débit principale : 3047 modules/heure (17336 modules en 5.69 h de build) ; file `state/queue-main.txt` : 255/228 faits ; prochains : P0283, P0284, P0286, P0288, P0289
 - Débit portable : 1820 modules/heure (1664 modules en 0.91 h de build) ; file `state/queue-laptop.txt` : 26/172 faits ; prochains : P0060, P0063, P0065, P0067, P0069
 - File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 163/282 faits ; prochains : P0282, P0283, P0284, P0285, P0286
