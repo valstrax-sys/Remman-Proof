@@ -13,3 +13,6 @@
      - ou diskpart `select vdisk file=G:\rh-verif\wsl\ext4.vhdx` / `compact vdisk` ;
      - ou `wsl --manage rhbuild --set-sparse true --allow-unsafe`.
    - Pour un rejeu complet (≈ 175 000 modules), il faudrait aussi plus de temps : ≈ 2 400 modules/h ici, soit environ 3 jours sur cette machine.
+
+- 20:40 UTC : la clé SSH Windows s'authentifie bien comme `Hesia-Unit` et peut lire le dépôt, mais `git push` est refusé (« Permission to valstrax-sys/Remman-Proof.git denied to Hesia-Unit »). Il faut que `valstrax-sys` invite `Hesia-Unit` en collaborateur avec droit d'écriture (Settings → Collaborators) **et** que `Hesia-Unit` accepte l'invitation (https://github.com/valstrax-sys/Remman-Proof/invitations). Ensuite : `cd G:h-verif; git push -u origin main`.
+- 20:38 UTC : portable de nouveau joignable ; le contrôleur v3 reprend la file partagée.

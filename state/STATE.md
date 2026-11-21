@@ -1,12 +1,12 @@
 # STATE — vérification distribuée de l'archive Lean d'Alpöge
 
-Mis à jour : 2026-11-21 20:40 UTC
+Mis à jour : 2026-11-21 20:42 UTC
 
 ## Résumé
 
 - Chunks vérifiés (build exit 0 + audit axiomes OK) : **365** (23261 modules cibles, 1129 imports reconstruits en plus)
 - Chunks en échec / non concluants : **0** 
-- En cours : laptop: P0063 (depth 0, try 1) since 20:39:06 UTC
+- En cours : main: P0366 (depth 5, try 1) since 20:40:39 UTC
 - Débit principale : 3046 modules/heure (22726 modules en 7.46 h de build) ; file `state/queue-main.txt` : 339/228 faits ; prochains : P0366, P0368, P0369, P0371, P0373
 - Débit portable : 1820 modules/heure (1664 modules en 0.91 h de build) ; file `state/queue-laptop.txt` : 26/172 faits ; prochains : P0060, P0063, P0065, P0067, P0069
 - File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 247/282 faits ; prochains : P0366, P0367, P0368, P0369, P0370
@@ -30,6 +30,10 @@ main : 19 Go libres sur le disque hôte (20:40:38 UTC)
      - ou diskpart `select vdisk file=G:\rh-verif\wsl\ext4.vhdx` / `compact vdisk` ;
      - ou `wsl --manage rhbuild --set-sparse true --allow-unsafe`.
    - Pour un rejeu complet (≈ 175 000 modules), il faudrait aussi plus de temps : ≈ 2 400 modules/h ici, soit environ 3 jours sur cette machine.
+
+- 20:40 UTC : la clé SSH Windows s'authentifie bien comme `Hesia-Unit` et peut lire le dépôt, mais `git push` est refusé (« Permission to valstrax-sys/Remman-Proof.git denied to Hesia-Unit »). Il faut que `valstrax-sys` invite `Hesia-Unit` en collaborateur avec droit d'écriture (Settings → Collaborators) **et** que `Hesia-Unit` accepte l'invitation (https://github.com/valstrax-sys/Remman-Proof/invitations). Ensuite : `cd G:
+h-verif; git push -u origin main`.
+- 20:38 UTC : portable de nouveau joignable ; le contrôleur v3 reprend la file partagée.
 
 ## Chunks
 
