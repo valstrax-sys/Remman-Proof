@@ -1,2 +1,2 @@
-laptop : 120 Go libres sur le disque hôte (12:54:16 UTC)
+laptop : 119 Go libres sur le disque hôte (12:56:28 UTC)
 main : 97 Go libres sur le disque hôte (12:55:57 UTC)
