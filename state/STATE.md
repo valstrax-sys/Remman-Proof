@@ -7,6 +7,7 @@ Mis à jour : 2026-11-21 20:56 UTC
 - Chunks vérifiés (build exit 0 + audit axiomes OK) : **374** (23837 modules cibles, 1138 imports reconstruits en plus)
 - Chunks en échec / non concluants : **0** 
 - En cours : laptop: P0362 (depth 5, try 1) since 20:42:30 UTC
+main: P0375 (depth 5, try 1) since 20:56:45 UTC
 - Débit principale : 3041 modules/heure (23311 modules en 7.67 h de build) ; file `state/queue-main.txt` : 348/228 faits ; prochains : P0375, P0376, P0378, P0379, P0381
 - Débit portable : 1820 modules/heure (1664 modules en 0.91 h de build) ; file `state/queue-laptop.txt` : 26/172 faits ; prochains : P0060, P0063, P0065, P0067, P0069
 - File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 256/282 faits ; prochains : P0375, P0376, P0377, P0378, P0379
