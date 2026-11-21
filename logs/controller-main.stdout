@@ -32,3 +32,8 @@
 [2026-11-21T12:11:11Z] [main] done P0019: # Chunk P0019 — VÉRIFIÉ (build + audit axiomes)
 [2026-11-21T12:11:11Z] [main] start P0021 depth=0 modules=64 est_new_builds=64 host_free=109GB jobs=11
 [2026-11-21T12:12:35Z] [main] BUILD_EXIT P0021 0 2026-11-21T12:12:18Z MEM_PEAK_MIB 8825 MAX_LEAN_PROCS 11 AUDIT_EXIT P0021 0 2026-11-21T12:12:29Z CHUNK_END P0021 build=0 audit=0 2026-11-21T12:12:29Z 
+[2026-11-21T12:12:36Z] [main] done P0021: # Chunk P0021 — VÉRIFIÉ (build + audit axiomes)
+[2026-11-21T12:12:37Z] [main] start P0023 depth=0 modules=64 est_new_builds=64 host_free=109GB jobs=11
+[2026-11-21T12:13:55Z] [main] BUILD_EXIT P0023 0 2026-11-21T12:13:38Z MEM_PEAK_MIB 7622 MAX_LEAN_PROCS 11 AUDIT_EXIT P0023 0 2026-11-21T12:13:49Z CHUNK_END P0023 build=0 audit=0 2026-11-21T12:13:49Z 
+[2026-11-21T12:13:56Z] [main] done P0023: # Chunk P0023 — VÉRIFIÉ (build + audit axiomes)
+[2026-11-21T12:13:57Z] [main] start P0025 depth=0 modules=64 est_new_builds=64 host_free=109GB jobs=11
