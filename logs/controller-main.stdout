@@ -321,3 +321,9 @@
 [2026-11-21T14:26:59Z] [main] done P0087: # Chunk P0087 — VÉRIFIÉ (build + audit axiomes ; 5 cibles compilées par un chunk antérieur)
 [2026-11-21T14:27:00Z] [main] start P0090 depth=0 modules=64 est_new_builds=64 host_free=73GB jobs=11 try=1
 [2026-11-21T14:28:13Z] [main] PRE_CHUNK P0090 fresh BUILD_EXIT P0090 0 2026-11-21T14:27:56Z MEM_PEAK_MIB 7200 MAX_LEAN_PROCS 11 AUDIT_EXIT P0090 0 2026-11-21T14:28:13Z CHUNK_END P0090 build=0 audit=0 2026-11-21T14:28:13Z 
+[2026-11-21T14:28:14Z] [main] done P0090: # Chunk P0090 — VÉRIFIÉ (build + audit axiomes ; 12 cibles compilées par un chunk antérieur)
+[2026-11-21T14:28:15Z] [main] start P0092 depth=0 modules=64 est_new_builds=64 host_free=73GB jobs=11 try=1
+[2026-11-21T14:29:33Z] [main] PRE_CHUNK P0092 fresh BUILD_EXIT P0092 0 2026-11-21T14:29:17Z MEM_PEAK_MIB 7693 MAX_LEAN_PROCS 11 AUDIT_EXIT P0092 0 2026-11-21T14:29:28Z CHUNK_END P0092 build=0 audit=0 2026-11-21T14:29:28Z 
+[2026-11-21T14:29:34Z] [main] done P0092: # Chunk P0092 — VÉRIFIÉ (build + audit axiomes ; 6 cibles compilées par un chunk antérieur)
+[2026-11-21T14:29:35Z] [main] start P0095 depth=1 modules=64 est_new_builds=86 host_free=72GB jobs=11 try=1
+[2026-11-21T14:32:07Z] [main] PRE_CHUNK P0095 fresh BUILD_EXIT P0095 0 2026-11-21T14:31:47Z MEM_PEAK_MIB 9273 MAX_LEAN_PROCS 11 AUDIT_EXIT P0095 0 2026-11-21T14:32:02Z CHUNK_END P0095 build=0 audit=0 2026-11-21T14:32:02Z 

@@ -431,3 +431,7 @@ P0090 VÉRIFIÉ (build + audit axiomes ; 12 cibles compilées par un chunk antérieu
 [2026-11-21T14:28:15Z] [main] start P0092 depth=0 modules=64 est_new_builds=64 host_free=73GB jobs=11 try=1
 [2026-11-21T14:29:33Z] [main] PRE_CHUNK P0092 fresh BUILD_EXIT P0092 0 2026-11-21T14:29:17Z MEM_PEAK_MIB 7693 MAX_LEAN_PROCS 11 AUDIT_EXIT P0092 0 2026-11-21T14:29:28Z CHUNK_END P0092 build=0 audit=0 2026-11-21T14:29:28Z 
 P0092 VÉRIFIÉ (build + audit axiomes ; 6 cibles compilées par un chunk antérieur) built 58 peak 7693 elapsed 64.9
+[2026-11-21T14:29:34Z] [main] done P0092: # Chunk P0092 â€” VÃ‰RIFIÃ‰ (build + audit axiomes ; 6 cibles compilÃ©es par un chunk antÃ©rieur)
+[2026-11-21T14:29:35Z] [main] start P0095 depth=1 modules=64 est_new_builds=86 host_free=72GB jobs=11 try=1
+[2026-11-21T14:32:07Z] [main] PRE_CHUNK P0095 fresh BUILD_EXIT P0095 0 2026-11-21T14:31:47Z MEM_PEAK_MIB 9273 MAX_LEAN_PROCS 11 AUDIT_EXIT P0095 0 2026-11-21T14:32:02Z CHUNK_END P0095 build=0 audit=0 2026-11-21T14:32:02Z 
+P0095 VÉRIFIÉ (build + audit axiomes) built 70 peak 9273 elapsed 138.9
