@@ -52,3 +52,6 @@
 [2026-11-21T12:40:25Z] [laptop] BUILD_EXIT P0038 0 2026-11-21T12:40:03Z MEM_PEAK_MIB 7513 MAX_LEAN_PROCS 10 AUDIT_EXIT P0038 0 2026-11-21T12:40:19Z CHUNK_END P0038 build=0 audit=0 2026-11-21T12:40:19Z 
 [2026-11-21T12:40:30Z] [laptop] done P0038: # Chunk P0038 — VÉRIFIÉ (build + audit axiomes)
 [2026-11-21T12:40:31Z] [laptop] start P0040 depth=0 modules=64 est_new_builds=64 host_free=122GB jobs=10
+[2026-11-21T12:42:49Z] [laptop] BUILD_EXIT P0040 0 2026-11-21T12:42:29Z MEM_PEAK_MIB 7158 MAX_LEAN_PROCS 10 AUDIT_EXIT P0040 0 2026-11-21T12:42:43Z CHUNK_END P0040 build=0 audit=0 2026-11-21T12:42:43Z 
+[2026-11-21T12:42:53Z] [laptop] done P0040: # Chunk P0040 — VÉRIFIÉ (build + audit axiomes)
+[2026-11-21T12:42:54Z] [laptop] start P0042 depth=0 modules=64 est_new_builds=64 host_free=122GB jobs=10
