@@ -423,3 +423,7 @@ P0085 VÉRIFIÉ (build + audit axiomes ; 4 cibles compilées par un chunk antérieur
 [2026-11-21T14:25:52Z] [main] start P0087 depth=0 modules=64 est_new_builds=64 host_free=73GB jobs=11 try=1
 [2026-11-21T14:26:58Z] [main] PRE_CHUNK P0087 fresh BUILD_EXIT P0087 0 2026-11-21T14:26:42Z MEM_PEAK_MIB 7923 MAX_LEAN_PROCS 11 AUDIT_EXIT P0087 0 2026-11-21T14:26:52Z CHUNK_END P0087 build=0 audit=0 2026-11-21T14:26:52Z 
 P0087 VÉRIFIÉ (build + audit axiomes ; 5 cibles compilées par un chunk antérieur) built 59 peak 7923 elapsed 55.7
+[2026-11-21T14:26:59Z] [main] done P0087: # Chunk P0087 â€” VÃ‰RIFIÃ‰ (build + audit axiomes ; 5 cibles compilÃ©es par un chunk antÃ©rieur)
+[2026-11-21T14:27:00Z] [main] start P0090 depth=0 modules=64 est_new_builds=64 host_free=73GB jobs=11 try=1
+[2026-11-21T14:28:13Z] [main] PRE_CHUNK P0090 fresh BUILD_EXIT P0090 0 2026-11-21T14:27:56Z MEM_PEAK_MIB 7200 MAX_LEAN_PROCS 11 AUDIT_EXIT P0090 0 2026-11-21T14:28:13Z CHUNK_END P0090 build=0 audit=0 2026-11-21T14:28:13Z 
+P0090 VÉRIFIÉ (build + audit axiomes ; 12 cibles compilées par un chunk antérieur) built 52 peak 7200 elapsed 58.7

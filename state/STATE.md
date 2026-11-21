@@ -1,17 +1,17 @@
 # STATE — vérification distribuée de l'archive Lean d'Alpöge
 
-Mis à jour : 2026-11-21 14:26 UTC
+Mis à jour : 2026-11-21 14:28 UTC
 
 ## Résumé
 
-- Chunks vérifiés (build exit 0 + audit axiomes OK) : **132** (8423 modules cibles, 580 imports reconstruits en plus)
+- Chunks vérifiés (build exit 0 + audit axiomes OK) : **133** (8487 modules cibles, 580 imports reconstruits en plus)
 - Chunks en échec / non concluants : **0** 
 - En cours : rien
-- Débit principale : 3329 modules/heure (7339 modules en 2.20 h de build) ; file `state/queue-main.txt` : 106/228 faits ; prochains : P0166, P0168, P0170, P0172, P0174
+- Débit principale : 3333 modules/heure (7403 modules en 2.22 h de build) ; file `state/queue-main.txt` : 107/228 faits ; prochains : P0166, P0168, P0170, P0172, P0174
 - Débit portable : 1820 modules/heure (1664 modules en 0.91 h de build) ; file `state/queue-laptop.txt` : 26/172 faits ; prochains : P0060, P0063, P0065, P0067, P0069
-- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 14/282 faits ; prochains : P0090, P0092, P0095, P0097, P0099
+- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 15/282 faits ; prochains : P0092, P0095, P0097, P0099, P0102
 - Disque : laptop :  Go libres sur le disque hôte (13:04:09 UTC)
-main : 73 Go libres sur le disque hôte (14:26:59 UTC)
+main : 73 Go libres sur le disque hôte (14:28:14 UTC)
 
 ## Bloquants / décisions utilisateur
 
@@ -114,6 +114,7 @@ main : 73 Go libres sur le disque hôte (14:26:59 UTC)
 | [P0087](../reports/P0087.md) | principale | VÉRIFIÉ (build + audit axiomes ; 5 cibles compilées par un chunk antérieur) | 64 | 0 | 55.7 | 2026-11-21T14:26:38 |
 | [P0088](../reports/P0088.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 55.9 | 2026-11-21T13:00:21 |
 | [P0089](../reports/P0089.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 65.0 | 2026-11-21T13:01:34 |
+| [P0090](../reports/P0090.md) | principale | VÉRIFIÉ (build + audit axiomes ; 12 cibles compilées par un chunk antérieur) | 64 | 0 | 58.7 | 2026-11-21T14:27:48 |
 | [P0091](../reports/P0091.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 91.1 | 2026-11-21T13:03:15 |
 | [P0093](../reports/P0093.md) | principale | VÉRIFIÉ (build + audit axiomes) | 39 | 0 | 43.8 | 2026-11-21T13:04:16 |
 | [P0094](../reports/P0094.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 8 | 75.3 | 2026-11-21T13:05:42 |
