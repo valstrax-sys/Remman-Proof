@@ -1,16 +1,16 @@
 # STATE — vérification distribuée de l'archive Lean d'Alpöge
 
-Mis à jour : 2026-11-21 13:12 UTC
+Mis à jour : 2026-11-21 13:14 UTC
 
 ## Résumé
 
-- Chunks vérifiés (build exit 0 + audit axiomes OK) : **81** (5159 modules cibles, 42 imports reconstruits en plus)
+- Chunks vérifiés (build exit 0 + audit axiomes OK) : **82** (5223 modules cibles, 55 imports reconstruits en plus)
 - Chunks en échec / non concluants : **0** 
 - En cours : rien
-- Débit principale : 3099 modules/heure (3537 modules en 1.14 h de build) ; file `state/queue-main.txt` : 55/228 faits ; prochains : P0100, P0101, P0103, P0105, P0107
+- Débit principale : 3072 modules/heure (3614 modules en 1.18 h de build) ; file `state/queue-main.txt` : 56/228 faits ; prochains : P0101, P0103, P0105, P0107, P0109
 - Débit portable : 1820 modules/heure (1664 modules en 0.91 h de build) ; file `state/queue-laptop.txt` : 26/172 faits ; prochains : P0060, P0063, P0065, P0067, P0069
 - Disque : laptop :  Go libres sur le disque hôte (13:04:09 UTC)
-main : 93 Go libres sur le disque hôte (13:12:13 UTC)
+main : 93 Go libres sur le disque hôte (13:14:51 UTC)
 
 ## Bloquants / décisions utilisateur
 
@@ -18,6 +18,7 @@ main : 93 Go libres sur le disque hôte (13:12:13 UTC)
 2. **Claims impossibles** sur `rohanarun/alpoge-rh-replay` : aucun `gh` authentifié (`gh` 2.23 installé dans Kali par l'agent mais non connecté ; l'API anonyme est en rate-limit). Je ne saisis pas de token. → `gh auth login` par l'utilisateur. Les chunks sont donc choisis **localement** (vérification indépendante, peut recouper des volontaires) ; aucune soumission publique n'a été faite (une soumission exige un claim accordé *avant* le build).
 3. **Non bloquant** : `wsl --manage rhbuild --resize 115GB` a échoué (il exige `wsl --shutdown`, que je n'ai pas fait car une session Kali de l'utilisateur est ouverte). Garde-fou appliqué à la place : le contrôleur s'arrête si G: a moins de 20 Go libres. Le VHDX ne rétrécit pas tout seul quand on supprime des fichiers.
 - [laptop] arrêt : espace libre hôte ? Go < 20 Go avant P0063 (2026-11-21T13:04:31Z)
+4. **Portable injoignable depuis ~13:01 UTC** (SSH timeout, hôte injoignable au ping) — probablement mise en veille Windows. Le chunk P0060 en cours a été perdu (sera relancé proprement : sorties des cibles supprimées puis recompilées). Je ne modifie pas les réglages d'alimentation du portable (réglage système). → Désactiver la veille sur secteur (`powercfg /change standby-timeout-ac 0`) si vous voulez qu'il travaille la nuit. Le contrôleur v2 l'attend jusqu'à 6 h et reprend automatiquement.
 
 ## Chunks
 
@@ -104,6 +105,7 @@ main : 93 Go libres sur le disque hôte (13:12:13 UTC)
 | [P0094](../reports/P0094.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 8 | 75.3 | 2026-11-21T13:05:42 |
 | [P0096](../reports/P0096.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 21 | 143.0 | 2026-11-21T13:08:16 |
 | [P0098](../reports/P0098.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 13 | 195.9 | 2026-11-21T13:11:46 |
+| [P0100](../reports/P0100.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 13 | 127.3 | 2026-11-21T13:14:27 |
 
 ## Reprise
 
