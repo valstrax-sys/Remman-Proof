@@ -863,3 +863,7 @@ P0241 VÉRIFIÉ (build + audit axiomes) built 65 peak 7890 elapsed 72.6
 [2026-11-21T17:25:41Z] [main] start P0242 depth=3 modules=64 est_new_builds=97 host_free=31GB jobs=11 try=1
 [2026-11-21T17:27:01Z] [main] PRE_CHUNK P0242 fresh BUILD_EXIT P0242 0 2026-11-21T17:26:45Z MEM_PEAK_MIB 5972 MAX_LEAN_PROCS 11 AUDIT_EXIT P0242 0 2026-11-21T17:26:58Z CHUNK_END P0242 build=0 audit=0 2026-11-21T17:26:58Z 
 P0242 VÉRIFIÉ (build + audit axiomes) built 64 peak 5972 elapsed 68.6
+[2026-11-21T17:27:02Z] [main] done P0242: # Chunk P0242 â€” VÃ‰RIFIÃ‰ (build + audit axiomes)
+[2026-11-21T17:27:02Z] [main] start P0243 depth=3 modules=64 est_new_builds=107 host_free=30GB jobs=11 try=1
+[2026-11-21T17:28:29Z] [main] PRE_CHUNK P0243 fresh BUILD_EXIT P0243 0 2026-11-21T17:28:11Z MEM_PEAK_MIB 6500 MAX_LEAN_PROCS 11 AUDIT_EXIT P0243 0 2026-11-21T17:28:26Z CHUNK_END P0243 build=0 audit=0 2026-11-21T17:28:26Z 
+P0243 VÉRIFIÉ (build + audit axiomes) built 65 peak 6500 elapsed 73.4
