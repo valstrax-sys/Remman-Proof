@@ -199,3 +199,5 @@ P0089 VÉRIFIÉ (build + audit axiomes) built 64 peak 8204 elapsed 65.0
 [2026-11-21T13:01:57Z] [main] start P0091 depth=0 modules=64 est_new_builds=64 host_free=95GB jobs=11
 [2026-11-21T13:03:40Z] [main] BUILD_EXIT P0091 0 2026-11-21T13:03:23Z MEM_PEAK_MIB 7776 MAX_LEAN_PROCS 11 AUDIT_EXIT P0091 0 2026-11-21T13:03:34Z CHUNK_END P0091 build=0 audit=0 2026-11-21T13:03:34Z 
 P0091 VÉRIFIÉ (build + audit axiomes) built 64 peak 7776 elapsed 91.1
+[2026-11-21T13:03:41Z] [main] done P0091: # Chunk P0091 â€” VÃ‰RIFIÃ‰ (build + audit axiomes)
+[2026-11-21T13:03:41Z] [main] start P0093 depth=0 modules=39 est_new_builds=39 host_free=95GB jobs=11
