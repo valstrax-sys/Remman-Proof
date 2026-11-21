@@ -1,17 +1,17 @@
 # STATE — vérification distribuée de l'archive Lean d'Alpöge
 
-Mis à jour : 2026-11-21 15:46 UTC
+Mis à jour : 2026-11-21 15:48 UTC
 
 ## Résumé
 
-- Chunks vérifiés (build exit 0 + audit axiomes OK) : **177** (11290 modules cibles, 1014 imports reconstruits en plus)
+- Chunks vérifiés (build exit 0 + audit axiomes OK) : **178** (11354 modules cibles, 1014 imports reconstruits en plus)
 - Chunks en échec / non concluants : **0** 
 - En cours : rien
-- Débit principale : 3149 modules/heure (10640 modules en 3.38 h de build) ; file `state/queue-main.txt` : 151/228 faits ; prochains : P0179, P0181, P0183, P0184, P0186
+- Débit principale : 3150 modules/heure (10704 modules en 3.40 h de build) ; file `state/queue-main.txt` : 152/228 faits ; prochains : P0179, P0181, P0183, P0184, P0186
 - Débit portable : 1820 modules/heure (1664 modules en 0.91 h de build) ; file `state/queue-laptop.txt` : 26/172 faits ; prochains : P0060, P0063, P0065, P0067, P0069
-- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 59/282 faits ; prochains : P0178, P0179, P0180, P0181, P0182
+- File partagée `state/queue-shared.txt` (depuis 14:12 UTC, portable injoignable) : 60/282 faits ; prochains : P0179, P0180, P0181, P0182, P0183
 - Disque : laptop :  Go libres sur le disque hôte (13:04:09 UTC)
-main : 54 Go libres sur le disque hôte (15:46:47 UTC)
+main : 54 Go libres sur le disque hôte (15:48:07 UTC)
 
 ## Bloquants / décisions utilisateur
 
@@ -202,6 +202,7 @@ main : 54 Go libres sur le disque hôte (15:46:47 UTC)
 | [P0175](../reports/P0175.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 59.0 | 2026-11-21T15:40:58 |
 | [P0176](../reports/P0176.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 5 | 234.2 | 2026-11-21T15:44:48 |
 | [P0177](../reports/P0177.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 2 | 84.1 | 2026-11-21T15:46:21 |
+| [P0178](../reports/P0178.md) | principale | VÉRIFIÉ (build + audit axiomes) | 64 | 0 | 66.6 | 2026-11-21T15:47:44 |
 
 ## Reprise
 
