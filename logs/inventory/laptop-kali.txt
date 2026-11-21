@@ -1,0 +1,39 @@
+== host: Velkhana user: Velkhana date: 2026-11-21T11:52:39Z
+Linux Velkhana 6.18.58.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Tue Oct 27 00:24:11 UTC 2026 x86_64 GNU/Linux
+== CPU
+CPU(s):                                  16
+Model name:                              AMD Ryzen 7 4800HS with Radeon Graphics
+Thread(s) per core:                      2
+Core(s) per socket:                      8
+Socket(s):                               1
+nproc=16
+== RAM
+               total        used        free      shared  buff/cache   available
+Mem:              15           1          11           0           2          14
+Swap:              4           0           4
+== Disk
+Filesystem     Type  Size  Used Avail Use% Mounted on
+/dev/sdd       ext4 1007G   68G  889G   8% /
+== GPU
+name, memory.total [MiB], driver_version
+NVIDIA GeForce RTX 2060 with Max-Q Design, 6144 MiB, 591.74
+== Tools
+gcc: /usr/bin/gcc | gcc (Debian 15.2.0-14) 15.2.0
+g++: /usr/bin/g++ | g++ (Debian 15.2.0-14) 15.2.0
+clang: MISSING
+make: /usr/bin/make | GNU Make 4.4.1
+cmake: MISSING
+python3: /usr/bin/python3 | Python 3.14.7
+pip3: /usr/bin/pip3 | pip 26.0.1 from /usr/lib/python3/dist-packages/pip (python 3.14)
+git: /usr/bin/git | git version 2.53.0
+curl: /usr/bin/curl | curl 8.21.0 (x86_64-pc-linux-gnu) libcurl/8.21.0 OpenSSL/3.5.4 zlib/1.3.1 brotli/1.1.0 zstd/1.5.7 libidn2/2.3.8 libpsl/0.21.2 libssh2/1.11.1 nghttp2/1.64.0 ngtcp2/1.24.0 nghttp3/1.12.0 mit-krb5/1.22.1 OpenLDAP/2.6.10
+elan: MISSING
+lean: MISSING
+lake: MISSING
+sage: MISSING
+docker: /usr/bin/docker | Docker version 28.5.2+dfsg4, build 9cc6dea35e9a963f281434761c656fba4ac43aed
+zstd: /usr/bin/zstd | *** Zstandard CLI (64-bit) v1.5.7, by Yann Collet ***
+gh: MISSING
+/usr/bin/time: MISSING
+tar: /usr/bin/tar | tar (GNU tar) 1.35
+sha256sum: /usr/bin/sha256sum | sha256sum (GNU coreutils) 9.7

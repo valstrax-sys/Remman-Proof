@@ -1,0 +1,14 @@
+
+
+FileSystem    : NTFS
+Size          : 1003711959040
+SizeRemaining : 142362673152
+
+
+
+
+FriendlyName         MediaType BusType          Size
+------------         --------- -------          ----
+Fanxiang S500PRO 1TB SSD       NVMe    1024209543168
+
+
